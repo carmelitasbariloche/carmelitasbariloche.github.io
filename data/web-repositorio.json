@@ -1,322 +1,322 @@
 [
     {
         "title": "Cuero señalador",
-        "ubicacion-fotos": "CUERO/SEÑALADORES/Señaladores de Cuero.jpg",
-        "imagen": "cuero señalador",
-        "stock": 2,
+        "stock": 1,
         "precio": 2500,
         "peso": 20,
         "categorias": "CUERO",
-        "descripcion": "Realizados en cuero vacuno. Pirograbados. 15,5x7 cm"
+        "imagen": "cuero señalador",
+        "descripcion": "Realizados en cuero vacuno. Pirograbados. 15,5x7 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\CUERO\\SEÑALADORES\\Señaladores 1\\Señaladores de Cuero -1.jpg"
     },
     {
         "title": "Cuero Evangelio con estuche pirograbado",
-        "ubicacion-fotos": "CUERO/ESTUCHES/Cuero Evangelio con estuche pirograbado A.jpg",
-        "imagen": "cuero evangelio con estuche pirograbado",
         "stock": 1,
         "precio": 16000,
         "peso": 90,
         "categorias": "CUERO",
-        "descripcion": "Los cuatro Evangelios en formato bolsillo en su estuche de cuero vacuno pirograbado. 9x13,5 cm"
+        "imagen": "cuero evangelio con estuche pirograbado",
+        "descripcion": "Los cuatro Evangelios en formato bolsillo en su estuche de cuero vacuno pirograbado. 9x13,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\CUERO\\ESTUCHES\\Cuero Evangelio con estuche pirograbado A.jpg"
     },
     {
         "title": "Detentes - Protección del Sagrado Corazón de Jesús",
-        "ubicacion-fotos": "VARIOS/ESCAPULARIOS Y DETENTES/Detentes.jpg",
-        "imagen": "Detentes",
         "stock": 100,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
-        "descripcion": "Pequeña imagen del Sagrado Corazón de Jesús sobre paño rojo, con la inscripción \"¡Detente! El Sagrado Corazón de Jesús está conmigo\" -    5x4 cm"
+        "imagen": "Detentes",
+        "descripcion": "Pequeña imagen del Sagrado Corazón de Jesús sobre paño rojo, con la inscripción \"¡Detente! El Sagrado Corazón de Jesús está conmigo\" -    5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESCAPULARIOS Y DETENTES\\Detentes.jpg"
     },
     {
         "title": "Escapulario chico",
-        "ubicacion-fotos": "VARIOS/ESCAPULARIOS Y DETENTES/Escapulario chico.jpg",
-        "imagen": "Escapulario chico",
         "stock": 100,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
-        "descripcion": "Confeccionados con tela e hilo macramé . Con la imagen de la Virgen del Carmen- 3,5x2,5 cm"
+        "imagen": "Escapulario chico",
+        "descripcion": "Confeccionados con tela e hilo macramé . Con la imagen de la Virgen del Carmen- 3,5x2,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESCAPULARIOS Y DETENTES\\Escapulario chico.jpg"
     },
     {
         "title": "Escapulario Grande",
-        "ubicacion-fotos": "VARIOS/ESCAPULARIOS Y DETENTES/Escapulario grande.jpg",
-        "imagen": "Escapulario grande",
         "stock": 100,
         "precio": 2000,
         "peso": 2,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
-        "descripcion": "Confeccionados con tela y cola de rata- Imagen de la Virgen del Carmen y Sagrado Corazón  5,5x4 cm"
+        "imagen": "Escapulario grande",
+        "descripcion": "Confeccionados con tela y cola de rata- Imagen de la Virgen del Carmen y Sagrado Corazón  5,5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESCAPULARIOS Y DETENTES\\Escapulario grande.jpg"
     },
     {
         "title": "Estampas de Flores Nada te turbe -1",
-        "ubicacion-fotos": "VARIOS/ESTAMPAS FLORES/Estampas Flores Nada te turbe -1.jpg",
-        "imagen": "Estampas Flores Nada te turbe-1-",
         "stock": 1,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
-        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm"
+        "imagen": "Estampas Flores Nada te turbe-1-",
+        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESTAMPAS FLORES\\Estampas Flores Nada te turbe -1.jpg"
     },
     {
         "title": "Estampas de Flores Nada te turbe -2",
-        "ubicacion-fotos": "VARIOS/ESTAMPAS FLORES/Estampas Flores Nada te turbe -2.jpg",
-        "imagen": "Estampas Flores Nada te turbe-2-",
         "stock": 1,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
-        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm"
+        "imagen": "Estampas Flores Nada te turbe-2-",
+        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESTAMPAS FLORES\\Estampas Flores Nada te turbe -2.jpg"
     },
     {
         "title": "Estampas de Flores Nada te turbe -3",
-        "ubicacion-fotos": "VARIOS/ESTAMPAS FLORES/Estampas Flores Nada te turbe -3.jpg",
-        "imagen": "Estampas Flores Nada te turbe-3-",
         "stock": 1,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
-        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm"
+        "imagen": "Estampas Flores Nada te turbe-3-",
+        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESTAMPAS FLORES\\Estampas Flores Nada te turbe -3.jpg"
     },
     {
         "title": "Estampas de Flores Nada te turbe -4",
-        "ubicacion-fotos": "VARIOS/ESTAMPAS FLORES/Estampas Flores Nada te turbe -4.jpg",
-        "imagen": "Estampas Flores Nada te turbe-4-",
         "stock": 1,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
-        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm"
+        "imagen": "Estampas Flores Nada te turbe-4-",
+        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESTAMPAS FLORES\\Estampas Flores Nada te turbe -4.jpg"
     },
     {
         "title": "Estampas de Flores Nada te turbe -5",
-        "ubicacion-fotos": "VARIOS/ESTAMPAS FLORES/Estampas Flores Nada te turbe -5.jpg",
-        "imagen": "Estampas Flores Nada te turbe-5-",
         "stock": 1,
         "precio": 1200,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
-        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm"
+        "imagen": "Estampas Flores Nada te turbe-5-",
+        "descripcion": "Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ESTAMPAS FLORES\\Estampas Flores Nada te turbe -5.jpg"
     },
     {
         "title": "Madera Cuadros puntillismo Sagrada Familia -1-",
-        "ubicacion-fotos": "Madera/CUADROS PUNTILLISMO/Madera Cuadro Puntillismo Sgda. Familia -1.jpg",
-        "imagen": "madera cuadro puntillismo sgda-familia-1-",
         "stock": 1,
         "precio": 18000,
         "peso": 325,
         "categorias": "MADERA>CUADROS PUNTILLISMO",
-        "descripcion": "Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm"
+        "imagen": "madera cuadro puntillismo sgda-familia-1-",
+        "descripcion": "Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PUNTILLISMO\\Madera Cuadro Puntillismo Sgda. Familia -1.jpg"
     },
     {
         "title": "Madera Cuadros puntillismo Sagrada Familia -2-",
-        "ubicacion-fotos": "Madera/CUADROS PUNTILLISMO/Madera Cuadro Puntillismo Sgda. Familia -2.jpg",
-        "imagen": "madera cuadro puntillismo sgda-familia-2-",
         "stock": 1,
         "precio": 18000,
         "peso": 325,
         "categorias": "MADERA>CUADROS PUNTILLISMO",
-        "descripcion": "Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm"
+        "imagen": "madera cuadro puntillismo sgda-familia-2-",
+        "descripcion": "Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PUNTILLISMO\\Madera Cuadro Puntillismo Sgda. Familia -2.jpg"
     },
     {
         "title": "Madera Cuadros puntillismo Virgencita de Luján -1-",
-        "ubicacion-fotos": "Madera/CUADROS PUNTILLISMO/Madera Cuadro Puntillismo Virgencita de Luján -1.jpg",
-        "imagen": "madera cuadro puntillismo virgencita de luján-1-",
         "stock": 1,
         "precio": 15000,
         "peso": 280,
         "categorias": "MADERA>CUADROS PUNTILLISMO",
-        "descripcion": "Pintado a mano con técnica puntillismo, 25 x 18 cm"
+        "imagen": "madera cuadro puntillismo virgencita de luján-1-",
+        "descripcion": "Pintado a mano con técnica puntillismo, 25 x 18 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PUNTILLISMO\\Madera Cuadro Puntillismo Virgencita de Luján -1.jpg"
     },
     {
         "title": "Madera Cuadros puntillismo Virgencita de Luján -2-",
-        "ubicacion-fotos": "Madera/CUADROS PUNTILLISMO/Madera Cuadro Puntillismo Virgencita de Luján -2.jpg",
-        "imagen": "madera cuadro puntillismo virgencita de luján-2-",
         "stock": 1,
         "precio": 15000,
         "peso": 280,
         "categorias": "MADERA>CUADROS PUNTILLISMO",
-        "descripcion": "Pintado a mano con técnica puntillismo, 25 x 18 cm"
+        "imagen": "madera cuadro puntillismo virgencita de luján-2-",
+        "descripcion": "Pintado a mano con técnica puntillismo, 25 x 18 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PUNTILLISMO\\Madera Cuadro Puntillismo Virgencita de Luján -2.jpg"
     },
     {
-        "title": "Madera Corazones pintados-1",
-        "ubicacion-fotos": "Madera/CUNEROS/CORAZONES Y CRUCES/Madera Corazones pintados -1.jpg",
+        "title": "Madera Corazones pintados-1-",
+        "stock": 100,
+        "precio": 7000,
+        "peso": 90,
+        "categorias": "MADERA>CUNEROS",
         "imagen": "Madera Corazones pintados-1-",
+        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUNEROS\\CORAZONES Y CRUCES\\Madera Corazones pintados -1.jpg"
+    },
+    {
+        "title": "Madera Corazones pintados-2-",
         "stock": 100,
         "precio": 7000,
         "peso": 90,
         "categorias": "MADERA>CUNEROS",
-        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm"
-    },
-    {
-        "title": "Madera Corazones pintados-2",
-        "ubicacion-fotos": "Madera/CUNEROS/CORAZONES Y CRUCES/Madera Corazones pintados -2.jpg",
         "imagen": "Madera Corazones pintados-2-",
-        "stock": 100,
-        "precio": 7000,
-        "peso": 90,
-        "categorias": "MADERA>CUNEROS",
-        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm"
+        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUNEROS\\CORAZONES Y CRUCES\\Madera Corazones pintados -2.jpg"
     },
     {
-        "title": "Madera Corazones pintados-3",
-        "ubicacion-fotos": "Madera/CUNEROS/CORAZONES Y CRUCES/Madera Corazones pintados -3.jpg",
-        "imagen": "Madera Corazones pintados-3-",
+        "title": "Madera Corazones pintados-3-",
         "stock": 100,
         "precio": 7000,
         "peso": 90,
         "categorias": "MADERA>CUNEROS",
-        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm"
+        "imagen": "Madera Corazones pintados-3-",
+        "descripcion": "Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUNEROS\\CORAZONES Y CRUCES\\Madera Corazones pintados -3.jpg"
     },
     {
         "title": "Madera Redondeles cuneritos",
-        "ubicacion-fotos": "Madera/CUNEROS/REDONDELES/Madera Redondeles cuneritos.jpg",
-        "imagen": "Madera Redondeles cuneritos",
         "stock": 100,
         "precio": 5000,
         "peso": 50,
         "categorias": "MADERA>CUNEROS",
-        "descripcion": "Cunero colgante redondo.  8 cm de diámetro.  Pintado a mano - Motivo infantil -"
+        "imagen": "Madera Redondeles cuneritos",
+        "descripcion": "Cunero colgante redondo.  8 cm de diámetro.  Pintado a mano - Motivo infantil -",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUNEROS\\REDONDELES\\Madera Redondeles cuneritos.jpg"
     },
     {
         "title": "Madera Cuadros Pasta piedra Virgen María -GRANDE-",
-        "ubicacion-fotos": "Madera/CUADROS PASTA PIEDRA/Madera Cuadro Virgen María Pasta Piedra -1.jpg",
-        "imagen": "Madera Cuadro Virgen María Pasta Piedra-1-",
         "stock": 1,
         "precio": 50000,
         "peso": 1300,
         "categorias": "MADERA>CUADROS PASTA PIEDRA",
-        "descripcion": "Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 40x30 cm - 1 cm grosor de la madera"
+        "imagen": "Madera Cuadro Virgen María Pasta Piedra-1-",
+        "descripcion": "Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 40x30 cm - 1 cm grosor de la madera",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PASTA PIEDRA\\Madera Cuadro Virgen María Pasta Piedra -1.jpg"
     },
     {
         "title": "Madera Cuadros Pasta piedra Virgen María -MEDIO-",
-        "ubicacion-fotos": "Madera/CUADROS PASTA PIEDRA/Madera Cuadro Virgen María Pasta Piedra -2.jpg",
-        "imagen": "Madera Cuadro Virgen María Pasta Piedra-2-",
         "stock": 1,
         "precio": 40000,
         "peso": 900,
         "categorias": "MADERA>CUADROS PASTA PIEDRA",
-        "descripcion": "Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 32x26 cm 1 cm grosor de la madera - "
+        "imagen": "Madera Cuadro Virgen María Pasta Piedra-2-",
+        "descripcion": "Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 32x26 cm 1 cm grosor de la madera - ",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Madera\\CUADROS PASTA PIEDRA\\Madera Cuadro Virgen María Pasta Piedra -2.jpg"
     },
     {
         "title": "Rosarios 24 glorias Sta. Teresita",
-        "ubicacion-fotos": "VARIOS/ROSARIOS/Rosarios 24 glorias Sta. Teresita.jpg",
-        "imagen": "rosarios-24-glorias-sta-teresita",
         "stock": 100,
         "precio": 1600,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
-        "descripcion": "Rosario  de 24 cuentas, en honor de los 24 años de vida de Sta. Teresita del Niño Jesús.  Con estampa explicativa (14,5x10 cm)"
+        "imagen": "rosarios-24-glorias-sta-teresita",
+        "descripcion": "Rosario  de 24 cuentas, en honor de los 24 años de vida de Sta. Teresita del Niño Jesús.  Con estampa explicativa (14,5x10 cm)",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ROSARIOS\\24 Glorias\\Rosarios 24 glorias Sta. Teresita.jpg"
     },
     {
         "title": "Rosarios Cola de rata",
-        "ubicacion-fotos": "VARIOS/ROSARIOS/Rosario cola de rata.jpg",
-        "imagen": "Rosario cola de rata",
         "stock": 100,
         "precio": 3000,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
-        "descripcion": "Rosario de bolsillo, con cuentas de madera pequeñas y cruz acorde.  Sencillo y práctico para nuestra oración cotidiana a la Virgen María."
+        "imagen": "Rosario cola de rata",
+        "descripcion": "Rosario de bolsillo, con cuentas de madera pequeñas y cruz acorde.  Sencillo y práctico para nuestra oración cotidiana a la Virgen María.",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VARIOS\\ROSARIOS\\Rosarios Cola de rata\\Rosario cola de rata.jpg"
     },
     {
         "title": "Velas Litúrgicas de Cera de abeja  (CHICAS) ",
-        "ubicacion-fotos": "VELAS/CERA DE ABEJAS/Vela Cera de abeja chica.jpg",
-        "imagen": "Vela cera de abeja chica",
         "stock": 100,
         "precio": 6500,
         "peso": 235,
         "categorias": "VELAS",
-        "descripcion": "Elaboradas con CERA DE ABEJAS. Aptas para uso en la Santa Misa u otros actos litúrgicos y devocionales. 5,5X 10,5 cm"
+        "imagen": "Vela cera de abeja chica",
+        "descripcion": "Elaboradas con CERA DE ABEJAS. Aptas para uso en la Santa Misa u otros actos litúrgicos y devocionales. 5,5X 10,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VELAS\\CERA DE ABEJAS\\Vela Cera de abeja chica.jpg"
     },
     {
         "title": "Velas Colores y Aromas -ROSAS-",
-        "ubicacion-fotos": "VELAS/COLORES Y AROMAS/Colores y aromas Rosas.jpg",
-        "imagen": "vela colores y aromas rosas",
         "stock": 0,
         "precio": 4500,
         "peso": 170,
         "categorias": "VELAS",
-        "descripcion": "Elaboradas con parafina, colores y esencias perfumadas. 4,2x12 cm"
+        "imagen": "vela colores y aromas rosas",
+        "descripcion": "Elaboradas con parafina, colores y esencias perfumadas. 4,2x12 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\VELAS\\COLORES Y AROMAS\\Colores y aromas Rosas.jpg"
     },
     {
         "title": "Cerámica Rosario engarzados (perfume de Rosas con cajita)",
-        "ubicacion-fotos": null,
-        "imagen": "Cerámica Rosario",
         "stock": 1,
         "precio": 15000,
         "peso": 40,
         "categorias": "CERÁMICA",
-        "descripcion": "Rosario engarzado con cuentas de cerámica realizadas de manera artesanal.  Perfume de rosas. Incluye cajita portarosario."
+        "imagen": "Cerámica Rosario",
+        "descripcion": "Rosario engarzado con cuentas de cerámica realizadas de manera artesanal.  Perfume de rosas. Incluye cajita portarosario.",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Rosario Cerámica.jpg"
     },
     {
         "title": "Cerámica cruces souvenir",
-        "ubicacion-fotos": "Cerámica/CRUCES/Cruz souvenir.jpg",
-        "imagen": "Cruz Souvenir",
         "stock": 1,
         "precio": 4600,
         "peso": 35,
         "categorias": "CERÁMICA",
-        "descripcion": "Cruz colgante de cerámica con el Niño Jesús - Diseños exclusivos - Ideal para cuneros o la habitación de los niños. 6,5x5,5 cm "
+        "imagen": "Cruz Souvenir",
+        "descripcion": "Cruz colgante de cerámica con el Niño Jesús - Diseños exclusivos - Ideal para cuneros o la habitación de los niños. 6,5x5,5 cm ",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\CRUCES\\Cruz souvenir.jpg"
     },
     {
         "title": "Cerámica Pesebre",
-        "ubicacion-fotos": "Cerámica/PESEBRES/Pesebre cerámica.jpg",
-        "imagen": "cerámica pesebre",
         "stock": 1,
         "precio": 16000,
         "peso": 210,
         "categorias": "CERÁMICA",
-        "descripcion": "Pesebre artesanal - Diseños exclusivos. 14x9,5 cm"
+        "imagen": "cerámica pesebre",
+        "descripcion": "Pesebre artesanal - Diseños exclusivos. 14x9,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\PESEBRES\\Pesebre cerámica.jpg"
     },
     {
         "title": "Cerámica Virgen embarazada",
-        "ubicacion-fotos": "Cerámica/Virgen Embarazada.jpg",
-        "imagen": "Virgen Embarazada",
         "stock": 1,
         "precio": 25000,
         "peso": 265,
         "categorias": "CERÁMICA",
-        "descripcion": "Imagen de la Virgen María, advocación \"Nuestra Señora de la Dulce Espera!\"- Diseños exclusivos -19,5 x 6,5 cm"
+        "imagen": "Virgen Embarazada",
+        "descripcion": "Imagen de la Virgen María, advocación \"Nuestra Señora de la Dulce Espera!\"- Diseños exclusivos -19,5 x 6,5 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Virgen Embarazada.jpg"
     },
     {
         "title": "Cerámica Niños Jesús-1-",
-        "ubicacion-fotos": "Cerámica/Niños Jesús/Cerámica Niño Jesús-1.jpg",
-        "imagen": "Cerámica Niño Jesús-1-",
         "stock": 1,
         "precio": 4000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
-        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm"
+        "imagen": "Cerámica Niño Jesús-1-",
+        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Niños Jesús\\Cerámica Niño Jesús -1.jpg"
     },
     {
         "title": "Cerámica Niños Jesús-2-",
-        "ubicacion-fotos": "Cerámica/Niños Jesús/Cerámica Niño Jesús-2.jpg",
-        "imagen": "Cerámica Niño Jesús-2-",
         "stock": 1,
         "precio": 4000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
-        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm"
+        "imagen": "Cerámica Niño Jesús-2-",
+        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Niños Jesús\\Cerámica Niño Jesús 3.jpg"
     },
     {
         "title": "Cerámica Niños Jesús-3-",
-        "ubicacion-fotos": "Cerámica/Niños Jesús/Cerámica Niño Jesús-3.jpg",
-        "imagen": "Cerámica Niño Jesús-3-",
         "stock": 1,
         "precio": 4000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
-        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm"
+        "imagen": "Cerámica Niño Jesús-3-",
+        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Niños Jesús\\Cerámica Niño Jesús 4.jpg"
     },
     {
         "title": "Cerámica Niños Jesús-4-",
-        "ubicacion-fotos": "Cerámica/Niños Jesús/Cerámica Niño Jesús-4.jpg",
-        "imagen": "Cerámica Niño Jesús-4-",
         "stock": 1,
         "precio": 4000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
-        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm"
+        "imagen": "Cerámica Niño Jesús-4-",
+        "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm",
+        "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Niños Jesús\\Cerámica Niño Jesús 4.jpg"
     }
 ]
