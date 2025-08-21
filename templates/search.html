@@ -1,0 +1,33 @@
+<!--         <div class="row" style="margin:4ex 1em 1em 1em">
+        <input type='text' class='form-control' placeholder='Buscá en el catálogo'>
+        </div>
+ -->
+
+{% for n in [1,2]%}
+
+
+{% if n==1%}
+<div class="container-out wide-screen">
+{% else %}
+<div class="container-out narrow-screen">
+
+{% endif %}
+	
+    <div class="container-in">
+    <div class="search-container">
+        <div class="search-engine">
+        <input
+            type="input"
+            id="search-input{{n}}"
+            autocomplete="off"
+            placeholder="Buscá en el catálogo"
+        />
+        </div>
+        <div id="search-results{{n}}"></div>
+        <div id="search-data{{n}}"></div>
+    </div>
+    </div>
+</div>
+
+ 
+{% endfor %}

@@ -1,0 +1,98 @@
+{% extends "base_buttons.html" %}
+
+{% block style%}
+{% include 'buttons.css' %}
+{% endblock style%}
+
+{% block content %}
+<body>
+<a name="top"></a>
+<!-- boton invisible para que funcione A2HS  -->
+<!--     <button class="add-button" style="display:none">Add to home screen</button> -->
+
+<!-- XSSCREEN -->
+<div class="row narrow-screen no-gutters bg-light" >
+    <!-- <div class="col-12 col-md-3 col-lg-2 st wrapper">  -->
+    <div class="col-12 col-md-3 col-lg-4 " style='padding-bottom'> 
+
+    {% include 'header.html' %}
+    </div>
+    <div class="col-12 col-md-9 col-lg-8">          
+        <div style="text-align: center">
+        <img src="{{xx.ImagenMostrador}}" alt="" style="width:100%;margin-bottom:0px;" >
+        </div>
+    </div>
+</div>
+
+
+
+<div class=" wrapper sidebar sidebar-left wide-screen"> 
+<div class="row" >
+{% include 'header.html' %}
+</div>
+
+
+</div>
+
+
+
+<div class="container-fluid" style='margin:0;padding:0'>
+
+    <div class="row wrapper double-scrol sticky narrow-screen" style='width:100%;margin:0em; padding: 0ex; z-index:100' > 
+    </div>
+
+    <!-- ######################## -->
+    <div class="content" style="min-height:100%">
+
+        <div class="wide-screen" style="text-align: center">
+        <img src="{{xx.ImagenMostrador}}" alt="" style="width: 100%;max-width:900px;margin-bottom:0px;" >
+        </div>
+
+        <div style="margin:1em"> 
+        <div style="margin:1em 0;text-align:center"> 
+        <!-- <p>(1) Elegí una categoría.</p> -->
+        <!-- <p>(1) Apretá en la foto de lo que querés.</p> -->
+        {% if xx.mensaje.inicial is defined %}
+            {{ xx.mensaje.inicial|safe}}
+        {% else %}
+        <p>Vistá nuestro catálogo en:</p>
+
+        <p style="margin:3ex">
+            <a href="https://janus.bio/almacen/">janus.bio/almacen</a>
+        </p>
+        {%endif%}
+        </div>
+
+        </div> <!-- content margin excludes image-->
+    </div><!-- /.content -->   
+    <!-- ######################## -->
+</div>
+
+<div class="mycol wrapper sidebar sidebar-right wide-screen" >     
+
+</div>
+
+<div class="container-fluid narrow-screen" >
+
+</div>
+
+    <div style=" width: 100%;">
+     <!-- include xx.subdir~'/footer.html' %} -->
+     {% include '/footer.html' %}
+    </div>
+
+</body>
+<!-- <script> window.onload = printCart(); </script> -->
+
+
+
+
+{% endblock content %}
+
+{% block scripts%}
+
+{% include 'buttons.js' %}
+
+{% include 'search.js' %}
+
+{% endblock scripts %}

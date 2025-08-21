@@ -1,0 +1,64 @@
+
+  <style>
+  /*.footer {
+    position: fixed;    left: 0;    bottom: 0;
+    width: 100%;overflow:auto; 
+    white-space:nowrap;   background-color: black;    color: white;    text-align: right;    margin-right:2rem; font-size:0.8em;
+  }*/
+  .footerr {
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+    max-height: 40%;
+    overflow:scroll; 
+    /*white-space:nowrap;   */
+    background-color: grey;    
+    color: white;    text-align: left; font-size:1em;
+/*    padding-top:0em;
+    padding-right:1em;*/
+    padding: 0em;
+    /*margin-right:-1em;*/
+    z-index: 99;
+  }
+.li-horizontal{
+  /*float: left;*/
+ margin-left: -0.2em}
+  </style>
+
+<p style="margin-top:6ex">
+</p>
+
+<div class='footerr' >
+ {% for article in catalog %}
+
+    {% set thisid='/detail.'~article.id %}
+    {% set thisnum='/detail.'~article.num %}
+    {% set ns=namespace(mybgcolor='') %}
+    {% for parent in parents.names%}
+
+        {% if parent.lower() == article.parent%}
+        {% set ns.mybgcolor = parents.bgcolors[loop.index0] %}
+        {%endif%}
+    {% endfor%}
+  <div class='details' id='{{thisid}}-narrow-screen' style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+ 
+       <span style="float:right;">
+      <button class='close-details' aria-label="Close Account Info Modal Box" style="font-size: 2em">×</button>
+      </span>
+      <hr style='border:1px solid rgb(200,200,200)'>
+
+      <div style='background-color:{{ns.mybgcolor}};text-align:center;color:black;padding-top:1ex;padding-bottom:1ex'>
+      <h3> {{article.title}} </h3>
+      </div>
+      <div style='text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;'>
+      <!-- article.description|safe}} -->
+      {% include xx.subdir~thisnum~'.md' %} 
+      </div>
+  </div>
+  {%endfor%}
+</div>
+
+ 
+
+
+<!-- <footer>text from footer.</footer> -->

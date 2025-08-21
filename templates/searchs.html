@@ -1,0 +1,26 @@
+<!-- https://www.naishare.com/blog/how-to-build-a-simple-search-engine-using-html-css-and-javascript -->
+<!--         <div class="row" style="margin:4ex 1em 1em 1em">
+        <input type='text' class='form-control' placeholder='Buscá en el catálogo'>
+        </div>
+ -->
+
+{% macro search(n)-%}
+<!-- <div class="container-out" style='width:100%'>
+    <div class="container-in">
+    <div class="search-container"> -->
+        <div class="search-engine" >
+        <input
+            type="input"
+            style='width:100%;text-align:center;top-margin:0.5ex;padding:0.5ex 0em'
+            id="search-input{{n}}"
+            autocomplete="off"
+            placeholder="Buscá en el catálogo"
+        />
+        </div>
+        <div id="search-results{{n}}"></div>
+        <div id="search-data{{n}}"></div>
+<!--     </div>
+    </div>
+</div> -->
+{%- endmacro -%}
+ 

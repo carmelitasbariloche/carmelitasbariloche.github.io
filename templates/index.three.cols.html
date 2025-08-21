@@ -1,0 +1,44 @@
+{% extends "base_buttons.html" %}
+
+{% block style%}
+{% include 'buttons.css' %}
+{% endblock style%}
+
+{% block content %}
+<body>
+<a name="top"></a>
+<div class='myrow'>
+    <div class="mycol wrapper sidebar sidebar-left"> 
+ {% include '/sidebar.html' %}
+    </div>
+
+    <div class="mycol content" style="min-height:100%">
+    <div class="wide-screen" style="text-align: center">
+    <img src="{{xx.ImagenMostrador}}" alt="" style="width: 100%;max-width:900px;margin-bottom:0px;" >
+    </div>
+    </div><!-- /.container -->
+
+
+ <div class="mycol wrapper sidebar sidebar-right " >     
+aa
+asfda
+as
+</div>
+
+</div>
+</body>
+
+<!-- <script> window.onload = printCart(); </script> -->
+
+
+
+
+{% endblock content %}
+
+{% block scripts%}
+
+{% include 'buttons.js' %}
+
+{% include 'search.js' %}
+
+{% endblock scripts %}

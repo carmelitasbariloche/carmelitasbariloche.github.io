@@ -1,0 +1,34 @@
+<div class="row" >
+{% include 'header.html' %}
+</div>
+
+
+{% import 'searchs.html' as s %}
+{{ s.search(2)}}
+
+
+
+{% if xx.pedido is defined and xx.pedido is sameas true %}
+<div class="myh2">
+                Pedido
+</div>
+
+<div class='row' style='margin-bottom:2ex'>
+{% if xx.mensaje is defined %}
+    <div class="col-12" >
+    {{ xx.mensaje.pedido|safe}}
+    </div>    
+{%endif%}
+    <div class="col-12">
+        {% include 'pedido.html' %} 
+    </div>
+
+ {% if xx.mensaje is defined %}
+    <div class="col-12" style='margin-top:2ex'>
+    {{ xx.mensaje.pedido2|safe}}
+    </div>    
+{%endif%}
+</div>
+{% endif %}
+
+

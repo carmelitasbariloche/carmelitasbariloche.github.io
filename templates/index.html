@@ -1,0 +1,122 @@
+{% extends "base_buttons.html" %}
+
+{% block style%}
+{% include 'buttons.css' %}
+{% endblock style%}
+
+{% block content %}
+<body>
+<a name="top"></a>
+
+<!-- XSSCREEN -->
+<div class="row narrow-screen no-gutters bg-light" >
+
+    <div class="col-12 col-md-3 col-lg-4 " style='padding-bottom'> 
+
+    {% include 'header.html' %}
+    {% import 'searchs.html' as s %}
+    {{ s.search(1)}}    
+
+    </div>
+    <div class="col-12 col-md-9 col-lg-8">          
+        <div style="text-align: center">
+        <img src="{{xx.ImagenMostrador}}" alt="" style="width:100%;margin-bottom:0px;" >
+        </div>
+    </div>
+</div>
+
+
+
+<div class=" wrapper sidebar sidebar-left wide-screen"> 
+ {% include '/sidebar-left.html' %}
+</div>
+
+<div class="container-fluid" style='margin:0;padding:0'>
+    <div class="row wrapper double-scrol sticky narrow-screen" style='width:100%;margin:0em; padding: 0ex; z-index:100' > 
+        {% include 'buttons.parents.html' %} 
+    </div>
+    <!-- ######################## -->
+    <div class="content" style="min-height:100%">
+
+        <div class="wide-screen" style="text-align: center">
+        <img src="{{xx.ImagenMostrador}}" alt="" style="width: 100%;max-width:900px;margin-bottom:0px;" >
+        </div>
+
+        <div style="margin:1em"> 
+        <div  class='title-color' style="margin:1em 0;text-align:justify"> 
+        {% if xx.mensaje.inicial is defined %}
+            {{ xx.mensaje.inicial|safe}}
+        {% else %}
+        <p>(1) Elegí lo que querés.</p>
+        <p>(2) Apretá  <button class='sendCarts' type="submit" id="sendCart">ENVIAR</button>,     así de simple.</p>
+        {%endif%}
+        </div>
+        
+        {% include 'buttons.html' %} 
+
+        </div> 
+    </div><!-- /.content -->   
+    <!-- ######################## -->
+</div>
+
+<div class="mycol wrapper sidebar sidebar-right wide-screen" >     
+ {% include '/sidebar-right.html' %}
+</div>
+
+<div class="container-fluid narrow-screen" >
+        <!-- este sticky hace que este pegado en la columna de widescreen -->
+    <!-- <div class="row " style="width:100%;margin-bottom:2ex;margin-left:0.5em"> -->
+{% if xx.pedido is defined and xx.pedido is sameas true %}
+    <a name="pedido"></a>
+    <div class='myh2 bg-light-1'>
+        {% if xx.articles.pedido is defined %}
+        {{xx.articles.pedido}}
+        {% else%}
+        Pedido de compra
+        {%endif%}
+    </div> 
+    <!-- </div> -->
+    <div class='row' style='padding:1em;text-align:center'>
+        {% if xx.mensaje is defined %}
+        <p class="col-12">
+        {{ xx.mensaje.pedido|safe}}
+        </p>  
+        {%endif%}
+        <div class="col-12">
+            {% include 'pedido.html' %} 
+        </div>
+        <div class="col-12">
+           <!-- Retiro en Janus sin costo de envio -->
+        </div>
+         {% if xx.mensaje is defined %}
+            <div class="col-12" style='margin-top:2ex'>
+            {{ xx.mensaje.pedido2|safe}}
+            </div>    
+        {%endif%}
+    </div>
+{% endif %}
+
+{% include 'links.html' %} 
+
+        <div style="margin-bottom:3ex;"></div>
+</div>
+
+    <div style=" width: 100%;">
+     <!-- include xx.subdir~'/footer.html' %} -->
+     {% include '/footer.html' %}
+    </div>
+
+</body>
+
+
+
+
+{% endblock content %}
+
+{% block scripts%}
+
+{% include 'buttons.js' %}
+
+{% include 'search.js' %}
+
+{% endblock scripts %}
