@@ -1,0 +1,4244 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Carmelitas Bariloche</title>
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="no-cache" http-equiv="cache-control"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+
+
+<link href="manifest.webmanifest" rel="manifest"/>
+
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; 
+  /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "▼" ; /*: "▶""\25BC";*/
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  content: "▶" ; /*: "\25B6";*/
+  color: white;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/*.caret-down::before {
+  transform: rotate(-90deg);
+}*/
+/* Hide the nested list */
+.nested {
+  /*display: none;*/
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  /*display: inline-block;*/
+}
+
+.disp-block{  display: block;}
+.disp-none{ display:none; }
+
+
+.myimg{
+width:160px;
+}
+
+
+.search-buttons{
+  overflow:visible;
+  /*max-width: 100%;*/
+  /*max-width:222px;*/
+  white-space: normal;
+}
+
+.wrapper {
+background: #EFEFEF;
+  /*margin: auto;*/
+  /*text-align: center;*/
+  /*position: relative;*/
+  /*-webkit-border-radius: 5px;*/
+  /*-moz-border-radius: 5px;*/
+  /*border-radius: 5px;*/
+  margin-bottom: 1em; 
+  padding-top: 5px;
+  /*z-index: 10;*/
+}
+
+.sidebar {
+  position: fixed;
+      /*    width: 250px;*/
+  /*width: 20%;*/
+    /*font-size: 21px;*/
+  overflow-y: scroll;
+/*    top: 0;
+    bottom: 0;*/
+
+      /*Esto es para que no se pueda mover horizontalmente*/
+  max-width: auto;
+  overflow-x: hidden;
+/*  z-index: 100;*/
+
+  height: 100%;
+}
+.sidebar-right{
+  right: 0; 
+  width: 12%;
+    padding: 0em 1em;
+}
+.sidebar-left{
+left: 0;
+ width: 28%;
+padding: 0em 1em;
+}
+
+.content {
+  position: absolute;
+  width: 60%;
+  left: 28%;       
+    /*padding: 0px 10px;*/
+    /*padding-left: 300px;*/
+/*    margin-left: 18%;
+    margin-right: 18%;*/
+    margin-top:0ex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/*xsscreen-only*/
+/*@media only screen and (max-width: 1200px) {*/
+@media only screen and (max-width: 868px) {
+  .wide-screen {   display:none!important; }
+
+.content {
+  position: relative;
+  width: 100%;
+  left: 0;       
+  padding:0 10px;
+  z-index: 1;
+}
+.wrapper {
+/*  background: #EFEFEF;*/
+  box-shadow: 1px 1px 10px #999;
+  /*!important;*/
+  width:100%;
+}
+
+
+.double-scrol {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 5em;
+  white-space: nowrap
+}
+.double-scrol div {
+  display: inline-block;
+  vertical-align: center;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1108px) {
+.myimg{ width:110px;}
+}
+
+
+
+/*widescreen-only o h-view; tiene en cuenta el ancho*/
+/*@media only screen and (min-width: 1200px) {*/
+@media only screen and (min-width: 868px) {
+
+.b-parent{  width:10em;}
+
+.narrow-screen{  display:none;}
+
+.double-scrol{  margin-top:1ex;}
+
+}
+
+/*shortscreen-only*/
+@media only screen and (max-height: 700px) {
+.tall-screen{
+  display:none!important; 
+}
+}
+
+@media only screen and (min-height: 500px) {
+.sticky{
+    position: -webkit-sticky!important; /* Safari */
+    position: sticky!important; 
+    top: 0!important;
+}
+}
+
+/*mobile-only, config. petiza */
+@media only screen and (min-height: 868px) {
+
+.mobile-only{  display:none;}
+
+}
+
+/*tallscreen-only*/
+/*desktop-only, config. alta*/
+@media only screen and (max-height: 868px) {
+
+.short-screen{ display:none!important; }
+
+}
+
+@media only screen and (max-height: 68px) and (max-width:08px) {
+
+.desktop-only{  display:none;}
+
+}
+
+.double-scrol::-webkit-scrollbar,.sidebar::-webkit-scrollbar,.content::-webkit-scrollbar {
+width: 6px;
+height: 6px;
+}
+.double-scrol::-webkit-scrollbar-track,.sidebar::-webkit-scrollbar-track,.content::-webkit-scrollbar-track  {
+border: 1px solid rgba(255,153,102,1);
+border-radius: 10px;
+}
+.double-scrol::-webkit-scrollbar-thumb,.sidebar::-webkit-scrollbar-thumb,.content::-webkit-scrollbar-thumb  {
+background: rgba(255,153,102,1);
+border-radius: 6px;
+}
+.double-scrol::-webkit-scrollbar-thumb:hover,.sidebar::-webkit-scrollbar-thumb:hover,.content::-webkit-scrollbar-thumb:hover {
+background: rgba(255,153,102,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+div.scrollmenu {
+  background-color: #333;
+  /*color:white;*/
+  overflow: auto;
+  white-space: nowrap;
+  margin: 1em;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  /*color: white;*/
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  /*background-color: #777;*/
+  background-color: black;
+}
+
+.cantidad,.quiero,.variedad{
+  display: inline-block;vertical-align: -50%;
+}
+.quiero{
+  /*border-radius: 1em;*/
+   font-size:1.2em
+}
+
+.sendCarts{
+  background-color: rgba(255,153,102,1)!important;
+
+  /*janus Green rgba(103,149,40,1)!important*/
+  /*color:red;*/
+}
+
+button[type="submit"]{
+    /* change these properties to whatever you want */
+    background-color: #777;
+    color: #fff;
+    border-radius: 10px;
+}
+/*.w3-button{
+  margin:1em;padding:2em 1em;border-radius: 1em;width:auto;border: 2px solid;outline:0;  font-family: Arial;font-size:1.5em;
+}*/
+
+
+.my-container{
+  border-radius: 1em;
+  /*width:auto;*/
+  border: 2px solid;outline:0;  
+  font-family: Arial;font-size:0.7em;
+  font-weight: 800; letter-spacing:0.08em;
+}
+.w3-container{
+  margin:0.3em;padding:0.5em 0.5em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+
+.w3-red,.w3-button:hover{
+  /*color:#fff!important;*/
+/*background-color:rgba(255,153,102,1)!important;*/
+/*background-color:white!important;*/
+/*font-size:0.9em;*/
+box-shadow: 8px 8px 10px #111
+/*#999;*/
+}
+
+.c-child{background-color: rgba(191,43,8,0.1); padding:1em 0 ; margin:0;}
+
+.c-article{
+  /*background-color: white; */
+  /*rgba(255,153,102,0.3);*/
+  padding:0.3em; margin:1em 0;
+}
+.b-article{
+  font-weight: bolder; letter-spacing:0.09em;
+/*border-radius: 1em;*/
+padding: 0em; 
+margin:-1em;
+/*padding-left:2em;  */
+width:auto; 
+/*color:rgba(255,153,102,1);*/
+font-size:1.6em;
+
+color:#fff;
+/*background-color:rgba(255,153,102,1)*/
+}
+
+
+button {
+-webkit-appearance: none !important;
+-moz-appearance: none !important ;
+appearance: none !important ;
+}
+
+p-button {
+   -webkit-appearance: none !important;
+-moz-appearance: none !important ;
+appearance: none !important ;
+}
+
+button[type="submit"]{
+-webkit-appearance: none !important;
+-moz-appearance: none !important ;
+appearance: none !important ;
+}
+
+
+</style> </meta></head>
+<body>
+<a name="top"></a>
+
+<div class="row narrow-screen no-gutters bg-light">
+<div class="col-12 col-md-3 col-lg-4" style="padding-bottom">
+
+
+<div style=" padding-left:1em;margin:-1.3em 0;">
+
+<header id="banner">
+
+<h1>
+
+<div class="row">
+
+<div class="title-color" style="padding-left:0.3em;padding-right:0.3em;">
+<strong>         Carmelitas Bariloche                 </strong>
+<strong style="font-size:40%;display:inline-block">                 
+                    “En el corazón de mi Madre, la Iglesia, yo seré el amor”<p>(Sta. Teresita del Niño de Jesús)</p>
+</strong>
+
+</div>
+</div>
+
+</h1>
+</header>
+
+<div style="padding:0.01ex; ">
+</div>
+</div> 
+<div class="search-engine">
+<input autocomplete="off" id="search-input1" placeholder="Buscá en el catálogo" style="width:100%;text-align:center;top-margin:0.5ex;padding:0.5ex 0em" type="input"/>
+</div>
+<div id="search-results1"></div>
+<div id="search-data1"></div>
+
+</div>
+<div class="col-12 col-md-9 col-lg-8">
+<div style="text-align: center">
+<img alt="" src="https://carmelitasbariloche.github.io/data/images/carmelo-y-sta-teresa.jpg" style="width:100%;margin-bottom:0px;"/>
+</div>
+</div>
+</div>
+<div class="wrapper sidebar sidebar-left wide-screen">
+<div class="row">
+
+
+<div style=" padding-left:1em;margin:-1.3em 0;">
+
+<header id="banner">
+
+<h1>
+
+<div class="row">
+
+<div class="title-color" style="padding-left:0.3em;padding-right:0.3em;">
+<strong>         Carmelitas Bariloche                 </strong>
+<strong style="font-size:40%;display:inline-block">                 
+                    “En el corazón de mi Madre, la Iglesia, yo seré el amor”<p>(Sta. Teresita del Niño de Jesús)</p>
+</strong>
+
+</div>
+</div>
+
+</h1>
+</header>
+
+<div style="padding:0.01ex; ">
+</div>
+</div></div>
+
+<div class="search-engine">
+<input autocomplete="off" id="search-input2" placeholder="Buscá en el catálogo" style="width:100%;text-align:center;top-margin:0.5ex;padding:0.5ex 0em" type="input"/>
+</div>
+<div id="search-results2"></div>
+<div id="search-data2"></div>
+
+<div class="myh2">
+                Pedido
+</div>
+<div class="row" style="margin-bottom:2ex">
+<div class="col-12">
+<p style="text-align: left;">Nos comunicamos a la brevedad para confirmar tu pedido y que puedas abonarlo.</p>
+</div>
+<div class="col-12">
+
+
+
+
+
+
+
+
+
+
+
+<form action="#" id="myform" name="myform">
+
+<textarea class="js-test-textarea pedido" style="width: 100%; height:100%;padding:1em 0em; max-width:700px;max-height:300px;line-height: 2ex;">
+  
+    </textarea>
+</form>
+<div style="max-width:700px;">
+<span style="float:left;">
+<button class="resetCarts" type="submit">Resetear</button>
+</span>
+<span style="float:right;">
+<button class="sendCarts" id="sendCart2" type="submit">ENVIAR</button>
+</span>
+</div>
+
+
+
+
+
+</div>
+<div class="col-12" style="margin-top:2ex">
+<p>Hacemos envíos a todo el país.</p><p>Podés retirar gratis en el Monasterio de lunes a viernes de 9 a 12hs</p>
+</div>
+</div>
+</div>
+<div class="container-fluid" style="margin:0;padding:0">
+<div class="row wrapper double-scrol sticky narrow-screen" style="width:100%;margin:0em; padding: 0ex; z-index:100">
+
+
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="showAll('b-parent','c-parent');location.href='#first';return false;" style="background-color:white"> 
+    TODOS
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-cerámica','b-parent','c-parent');location.href='#cerámica';return false;" style="background-color:LightSteelBlue"> 
+    CERÁMICA
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-cuero','b-parent','c-parent');location.href='#cuero';return false;" style="background-color:PaleGoldenRod"> 
+    CUERO
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-madera','b-parent','c-parent');location.href='#madera';return false;" style="background-color:Tan"> 
+    MADERA
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-varios','b-parent','c-parent');location.href='#varios';return false;" style="background-color:DarkKhaki"> 
+    VARIOS
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-velas','b-parent','c-parent');location.href='#velas';return false;" style="background-color:Thistle"> 
+    VELAS
+   </button>
+</div>
+
+</div>
+
+<div class="content" style="min-height:100%">
+<div class="wide-screen" style="text-align: center">
+<img alt="" src="https://carmelitasbariloche.github.io/data/images/carmelo-y-sta-teresa.jpg" style="width: 100%;max-width:900px;margin-bottom:0px;"/>
+</div>
+<div style="margin:1em">
+<div class="title-color" style="margin:1em 0;text-align:justify">
+<p>Monasterio “Nuestra Señora de las Nieves y Sta. Teresita” – Fundado 8 de mayo 1993</p>
+
+Santa Teresa de Jesús, Nuestra Madre, fundó el primer Carmelo reformado en España el 24 de agosto de 1562: Carisma rico y fecundo se extendió rápidamente por todo el mundo hasta llegar a nuestras tierras patagónicas.
+Nuestra vida de oración, trabajo, silencio, soledad; junto con una intensa vida de comunidad, fraterna, alegre y sencilla; es nuestra respuesta cotidiana a los grandes desafíos, dolores y esperanzas que vive la humanidad hoy.
+Insertas directamente en el Corazón de Cristo, atraídas por su belleza y amor, le entregamos nuestra vida por el bien de todos. El trabajo manual, vivido en soledad y silencio orante, constituye un elemento importante de nuestra vida que nos permite, además de sustentarnos, llegar a las vidas y a los hogares de muchas personas.
+Brindamos ahora con mucha sencillez, este espacio online, respondiendo al pedido que muchos nos han hecho llegar; que deseaban también una manera concreta de colaborar con nuestra vida contemplativa.  
+Desde ya les estamos muy agradecidas.
+<p style="text-align:right">Hnas. Carmelitas de Bariloche</p>
+</div>
+
+<a name="first"></a>
+<div class="c-parent" id="id-cerámica" style="display:block;">
+
+
+<div class="row" style=" margin:2ex 1ex 0em 0em; padding: 0ex 1em">
+<a name="cerámica"></a>
+<div class="myh2">
+<div class="caret parent-caret" id="id-cerámica-caret" onclick="toggleById('id-cerámica-content');return false;" style="background:LightSteelBlue;color:black;text-align:center;padding:0.5em">
+    CERÁMICA
+    </div>
+</div>
+</div>
+<div class="parent-content" id="id-cerámica-content">
+<p style="text-align: center;">
+</p>
+<div class="row">
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica- children" style="padding:0.3em">
+<a name="Cerámica cruces souvenir"></a>
+<div class="card h-100 c-cerámica- children" id="id-cerámica/Cerámica cruces souvenir">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica cruces souvenir-narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       CRUCES 
+      <span style="color:grey">souvenir</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica cruces souvenir-wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       CRUCES 
+      <span style="color:grey">souvenir</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$4600</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica cruces souvenir-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cruz souvenir.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica cruces souvenir-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica cruces souvenir-img-modal"/>
+<div id="Cerámica cruces souvenir-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica cruces souvenir-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica cruces souvenir-cant" max="1" min="0" name="cerámica/Cerámica cruces souvenir" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica cruces souvenir-price" name="cerámica/Cerámica cruces souvenir" type="hidden" value="4600"/>
+<input class="weight" form="myform" id="cerámica/Cerámica cruces souvenir-weight" name="cerámica/Cerámica cruces souvenir" type="hidden" value="35"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica cruces souvenir-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Cruz colgante de cerámica con el Niño Jesús - Diseños exclusivos - Ideal para cuneros o la habitación de los niños. 6,5x5,5 cm 
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica- children" style="padding:0.3em">
+<a name="Cerámica Pesebre"></a>
+<div class="card h-100 c-cerámica- children" id="id-cerámica/Cerámica Pesebre">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Pesebre-narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      PESEBRE 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Pesebre-wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      PESEBRE 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$16000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Pesebre-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica pesebre.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Pesebre-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Pesebre-img-modal"/>
+<div id="Cerámica Pesebre-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Pesebre-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Pesebre-cant" max="1" min="0" name="cerámica/Cerámica Pesebre" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Pesebre-price" name="cerámica/Cerámica Pesebre" type="hidden" value="16000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Pesebre-weight" name="cerámica/Cerámica Pesebre" type="hidden" value="210"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Pesebre-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pesebre artesanal - Diseños exclusivos. 14x9,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica- children" style="padding:0.3em">
+<a name="Cerámica Rosario engarzados (perfume de Rosas con cajita)"></a>
+<div class="card h-100 c-cerámica- children" id="id-cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Rosario engarzados (perfume de Rosas con cajita)-narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       ROSARIO 
+      <span style="color:grey">engarzados</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Rosario engarzados (perfume de Rosas con cajita)-wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       ROSARIO 
+      <span style="color:grey">engarzados</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$15000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Rosario engarzados (perfume de Rosas con cajita)-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica rosario.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Rosario engarzados (perfume de Rosas con cajita)-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Rosario engarzados (perfume de Rosas con cajita)-img-modal"/>
+<div id="Cerámica Rosario engarzados (perfume de Rosas con cajita)-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)-cant" max="1" min="0" name="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)-price" name="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)" type="hidden" value="15000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)-weight" name="cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)" type="hidden" value="40"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Rosario engarzados (perfume de Rosas con cajita)-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+<p>PERFUME DE ROSAS CON CAJITA</p> Rosario engarzado con cuentas de cerámica realizadas de manera artesanal.  Perfume de rosas. Incluye cajita portarosario.
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica- children" style="padding:0.3em">
+<a name="Cerámica Virgen embarazada"></a>
+<div class="card h-100 c-cerámica- children" id="id-cerámica/Cerámica Virgen embarazada">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Virgen embarazada-narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       VIRGEN 
+      <span style="color:grey">embarazada</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Virgen embarazada-wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+       VIRGEN 
+      <span style="color:grey">embarazada</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$25000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Virgen embarazada-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/virgen embarazada.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Virgen embarazada-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Virgen embarazada-img-modal"/>
+<div id="Cerámica Virgen embarazada-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Virgen embarazada-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Virgen embarazada-cant" max="1" min="0" name="cerámica/Cerámica Virgen embarazada" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Virgen embarazada-price" name="cerámica/Cerámica Virgen embarazada" type="hidden" value="25000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Virgen embarazada-weight" name="cerámica/Cerámica Virgen embarazada" type="hidden" value="265"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Virgen embarazada-cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Imagen de la Virgen María, advocación "Nuestra Señora de la Dulce Espera!"- Diseños exclusivos -19,5 x 6,5 cm
+  </div> </div>
+</div>
+
+<div class="myh3 caret" onclick="toggleByClass('c-cerámica-NIÑOS JESÚS');return false;" style="background:LightSteelBlue;padding:0.5em;text-align:center;color:black;"> 
+          NIÑOS JESÚS
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica-NIÑOS JESÚS children" style="padding:0.3em">
+<a name="Cerámica Niños Jesús-1-"></a>
+<div class="card h-100 c-cerámica-NIÑOS JESÚS children" id="id-cerámica/Cerámica Niños Jesús-1-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-1--narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -1- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-1--wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -1- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$4000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Niños Jesús-1--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica niño jesús-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Niños Jesús-1--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Niños Jesús-1--img-modal"/>
+<div id="Cerámica Niños Jesús-1--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Niños Jesús-1--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Niños Jesús-1--cant" max="1" min="0" name="cerámica/Cerámica Niños Jesús-1-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Niños Jesús-1--price" name="cerámica/Cerámica Niños Jesús-1-" type="hidden" value="4000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Niños Jesús-1--weight" name="cerámica/Cerámica Niños Jesús-1-" type="hidden" value="18"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Niños Jesús-1--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica-NIÑOS JESÚS children" style="padding:0.3em">
+<a name="Cerámica Niños Jesús-2-"></a>
+<div class="card h-100 c-cerámica-NIÑOS JESÚS children" id="id-cerámica/Cerámica Niños Jesús-2-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-2--narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -2- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-2--wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -2- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$4000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Niños Jesús-2--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica niño jesús-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Niños Jesús-2--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Niños Jesús-2--img-modal"/>
+<div id="Cerámica Niños Jesús-2--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Niños Jesús-2--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Niños Jesús-2--cant" max="1" min="0" name="cerámica/Cerámica Niños Jesús-2-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Niños Jesús-2--price" name="cerámica/Cerámica Niños Jesús-2-" type="hidden" value="4000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Niños Jesús-2--weight" name="cerámica/Cerámica Niños Jesús-2-" type="hidden" value="18"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Niños Jesús-2--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica-NIÑOS JESÚS children" style="padding:0.3em">
+<a name="Cerámica Niños Jesús-3-"></a>
+<div class="card h-100 c-cerámica-NIÑOS JESÚS children" id="id-cerámica/Cerámica Niños Jesús-3-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-3--narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -3- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-3--wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -3- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$4000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Niños Jesús-3--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica niño jesús-3-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Niños Jesús-3--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Niños Jesús-3--img-modal"/>
+<div id="Cerámica Niños Jesús-3--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Niños Jesús-3--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Niños Jesús-3--cant" max="1" min="0" name="cerámica/Cerámica Niños Jesús-3-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Niños Jesús-3--price" name="cerámica/Cerámica Niños Jesús-3-" type="hidden" value="4000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Niños Jesús-3--weight" name="cerámica/Cerámica Niños Jesús-3-" type="hidden" value="18"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Niños Jesús-3--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cerámica-NIÑOS JESÚS children" style="padding:0.3em">
+<a name="Cerámica Niños Jesús-4-"></a>
+<div class="card h-100 c-cerámica-NIÑOS JESÚS children" id="id-cerámica/Cerámica Niños Jesús-4-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-4--narrow-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -4- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cerámica Niños Jesús-4--wide-screen','details');return false; " style="background-color:LightSteelBlue;color:black; min-height:6ex ;cursor: pointer;">   
+      -4- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$4000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cerámica Niños Jesús-4--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cerámica niño jesús-4-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cerámica Niños Jesús-4--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cerámica Niños Jesús-4--img-modal"/>
+<div id="Cerámica Niños Jesús-4--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cerámica/Cerámica Niños Jesús-4--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cerámica/Cerámica Niños Jesús-4--cant" max="1" min="0" name="cerámica/Cerámica Niños Jesús-4-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cerámica/Cerámica Niños Jesús-4--price" name="cerámica/Cerámica Niños Jesús-4-" type="hidden" value="4000"/>
+<input class="weight" form="myform" id="cerámica/Cerámica Niños Jesús-4--weight" name="cerámica/Cerámica Niños Jesús-4-" type="hidden" value="18"/>
+<div class="btn quiero" onclick="addToCart('cerámica/Cerámica Niños Jesús-4--cant');return false;" style="background-color:LightSteelBlue;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+  </div> </div>
+</div>
+</div> 
+</div>
+</div>
+<div class="c-parent" id="id-cuero" style="display:block;">
+
+
+<div class="row" style=" margin:2ex 1ex 0em 0em; padding: 0ex 1em">
+<a name="cuero"></a>
+<div class="myh2">
+<div class="caret parent-caret" id="id-cuero-caret" onclick="toggleById('id-cuero-content');return false;" style="background:PaleGoldenRod;color:black;text-align:center;padding:0.5em">
+    CUERO
+    </div>
+</div>
+</div>
+<div class="parent-content" id="id-cuero-content">
+<p style="text-align: center;">
+</p>
+<div class="row">
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cuero- children" style="padding:0.3em">
+<a name="Cuero Evangelio con estuche pirograbado"></a>
+<div class="card h-100 c-cuero- children" id="id-cuero/Cuero Evangelio con estuche pirograbado">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cuero Evangelio con estuche pirograbado-narrow-screen','details');return false; " style="background-color:PaleGoldenRod;color:black; min-height:6ex ;cursor: pointer;">   
+       EVANGELIO 
+      <span style="color:grey">con estuche pirograbado</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cuero Evangelio con estuche pirograbado-wide-screen','details');return false; " style="background-color:PaleGoldenRod;color:black; min-height:6ex ;cursor: pointer;">   
+       EVANGELIO 
+      <span style="color:grey">con estuche pirograbado</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$16000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cuero Evangelio con estuche pirograbado-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cuero evangelio con estuche pirograbado.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cuero Evangelio con estuche pirograbado-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cuero Evangelio con estuche pirograbado-img-modal"/>
+<div id="Cuero Evangelio con estuche pirograbado-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cuero/Cuero Evangelio con estuche pirograbado-cant');return false;" style="background-color:PaleGoldenRod;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cuero/Cuero Evangelio con estuche pirograbado-cant" max="1" min="0" name="cuero/Cuero Evangelio con estuche pirograbado" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cuero/Cuero Evangelio con estuche pirograbado-price" name="cuero/Cuero Evangelio con estuche pirograbado" type="hidden" value="16000"/>
+<input class="weight" form="myform" id="cuero/Cuero Evangelio con estuche pirograbado-weight" name="cuero/Cuero Evangelio con estuche pirograbado" type="hidden" value="90"/>
+<div class="btn quiero" onclick="addToCart('cuero/Cuero Evangelio con estuche pirograbado-cant');return false;" style="background-color:PaleGoldenRod;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Los cuatro Evangelios en formato bolsillo en su estuche de cuero vacuno pirograbado. 9x13,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-cuero- children" style="padding:0.3em">
+<a name="Cuero señalador"></a>
+<div class="card h-100 c-cuero- children" id="id-cuero/Cuero señalador">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Cuero señalador-narrow-screen','details');return false; " style="background-color:PaleGoldenRod;color:black; min-height:6ex ;cursor: pointer;">   
+      SEÑALADOR 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Cuero señalador-wide-screen','details');return false; " style="background-color:PaleGoldenRod;color:black; min-height:6ex ;cursor: pointer;">   
+      SEÑALADOR 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$2500</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Cuero señalador-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/cuero señalador.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Cuero señalador-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Cuero señalador-img-modal"/>
+<div id="Cuero señalador-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('cuero/Cuero señalador-cant');return false;" style="background-color:PaleGoldenRod;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="cuero/Cuero señalador-cant" max="1" min="0" name="cuero/Cuero señalador" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="cuero/Cuero señalador-price" name="cuero/Cuero señalador" type="hidden" value="2500"/>
+<input class="weight" form="myform" id="cuero/Cuero señalador-weight" name="cuero/Cuero señalador" type="hidden" value="20"/>
+<div class="btn quiero" onclick="addToCart('cuero/Cuero señalador-cant');return false;" style="background-color:PaleGoldenRod;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Realizados en cuero vacuno. Pirograbados. 15,5x7 cm
+  </div> </div>
+</div>
+</div> 
+</div>
+</div>
+<div class="c-parent" id="id-madera" style="display:block;">
+
+
+<div class="row" style=" margin:2ex 1ex 0em 0em; padding: 0ex 1em">
+<a name="madera"></a>
+<div class="myh2">
+<div class="caret parent-caret" id="id-madera-caret" onclick="toggleById('id-madera-content');return false;" style="background:Tan;color:black;text-align:center;padding:0.5em">
+    MADERA
+    </div>
+</div>
+</div>
+<div class="parent-content" id="id-madera-content">
+<p style="text-align: center;">
+</p>
+<div class="row">
+
+<div class="myh3 caret" onclick="toggleByClass('c-madera-CUADROS PASTA PIEDRA');return false;" style="background:Tan;padding:0.5em;text-align:center;color:black;"> 
+          CUADROS PASTA PIEDRA
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PASTA PIEDRA children" style="padding:0.3em">
+<a name="Madera Cuadros Pasta piedra Virgen María -GRANDE-"></a>
+<div class="card h-100 c-madera-CUADROS PASTA PIEDRA children" id="id-madera/Madera Cuadros Pasta piedra Virgen María -GRANDE-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros Pasta piedra Virgen María -GRANDE--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGEN MARÍA -GRANDE- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros Pasta piedra Virgen María -GRANDE--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGEN MARÍA -GRANDE- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$50000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros Pasta piedra Virgen María -GRANDE--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro virgen maría pasta piedra-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros Pasta piedra Virgen María -GRANDE--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros Pasta piedra Virgen María -GRANDE--img-modal"/>
+<div id="Madera Cuadros Pasta piedra Virgen María -GRANDE--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros Pasta piedra Virgen María -GRANDE--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE--cant" max="1" min="0" name="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE--price" name="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE-" type="hidden" value="50000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE--weight" name="madera/Madera Cuadros Pasta piedra Virgen María -GRANDE-" type="hidden" value="1300"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros Pasta piedra Virgen María -GRANDE--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 40x30 cm - 1 cm grosor de la madera
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PASTA PIEDRA children" style="padding:0.3em">
+<a name="Madera Cuadros Pasta piedra Virgen María -MEDIO-"></a>
+<div class="card h-100 c-madera-CUADROS PASTA PIEDRA children" id="id-madera/Madera Cuadros Pasta piedra Virgen María -MEDIO-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros Pasta piedra Virgen María -MEDIO--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGEN MARÍA -MEDIO- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros Pasta piedra Virgen María -MEDIO--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGEN MARÍA -MEDIO- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$40000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros Pasta piedra Virgen María -MEDIO--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro virgen maría pasta piedra-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros Pasta piedra Virgen María -MEDIO--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros Pasta piedra Virgen María -MEDIO--img-modal"/>
+<div id="Madera Cuadros Pasta piedra Virgen María -MEDIO--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros Pasta piedra Virgen María -MEDIO--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO--cant" max="1" min="0" name="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO--price" name="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO-" type="hidden" value="40000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO--weight" name="madera/Madera Cuadros Pasta piedra Virgen María -MEDIO-" type="hidden" value="900"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros Pasta piedra Virgen María -MEDIO--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. <p>32x26 cm 1 cm grosor de la madera</p>
+</div> </div>
+</div>
+
+</div> <div class="row">
+<div class="myh3 caret" onclick="toggleByClass('c-madera-CUADROS PUNTILLISMO');return false;" style="background:Tan;padding:0.5em;text-align:center;color:black;"> 
+          CUADROS PUNTILLISMO
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PUNTILLISMO children" style="padding:0.3em">
+<a name="Madera Cuadros puntillismo Sagrada Familia -1-"></a>
+<div class="card h-100 c-madera-CUADROS PUNTILLISMO children" id="id-madera/Madera Cuadros puntillismo Sagrada Familia -1-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Sagrada Familia -1--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        SAGRADA FAMILIA -1- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Sagrada Familia -1--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        SAGRADA FAMILIA -1- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$18000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros puntillismo Sagrada Familia -1--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro puntillismo sgda-familia-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros puntillismo Sagrada Familia -1--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros puntillismo Sagrada Familia -1--img-modal"/>
+<div id="Madera Cuadros puntillismo Sagrada Familia -1--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros puntillismo Sagrada Familia -1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -1--cant" max="1" min="0" name="madera/Madera Cuadros puntillismo Sagrada Familia -1-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -1--price" name="madera/Madera Cuadros puntillismo Sagrada Familia -1-" type="hidden" value="18000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -1--weight" name="madera/Madera Cuadros puntillismo Sagrada Familia -1-" type="hidden" value="325"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros puntillismo Sagrada Familia -1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PUNTILLISMO children" style="padding:0.3em">
+<a name="Madera Cuadros puntillismo Sagrada Familia -2-"></a>
+<div class="card h-100 c-madera-CUADROS PUNTILLISMO children" id="id-madera/Madera Cuadros puntillismo Sagrada Familia -2-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Sagrada Familia -2--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        SAGRADA FAMILIA -2- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Sagrada Familia -2--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        SAGRADA FAMILIA -2- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$18000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros puntillismo Sagrada Familia -2--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro puntillismo sgda-familia-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros puntillismo Sagrada Familia -2--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros puntillismo Sagrada Familia -2--img-modal"/>
+<div id="Madera Cuadros puntillismo Sagrada Familia -2--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros puntillismo Sagrada Familia -2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -2--cant" max="1" min="0" name="madera/Madera Cuadros puntillismo Sagrada Familia -2-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -2--price" name="madera/Madera Cuadros puntillismo Sagrada Familia -2-" type="hidden" value="18000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros puntillismo Sagrada Familia -2--weight" name="madera/Madera Cuadros puntillismo Sagrada Familia -2-" type="hidden" value="325"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros puntillismo Sagrada Familia -2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PUNTILLISMO children" style="padding:0.3em">
+<a name="Madera Cuadros puntillismo Virgencita de Luján -1-"></a>
+<div class="card h-100 c-madera-CUADROS PUNTILLISMO children" id="id-madera/Madera Cuadros puntillismo Virgencita de Luján -1-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Virgencita de Luján -1--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGENCITA DE LUJÁN -1- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Virgencita de Luján -1--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGENCITA DE LUJÁN -1- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$15000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros puntillismo Virgencita de Luján -1--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro puntillismo virgencita de luján-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros puntillismo Virgencita de Luján -1--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros puntillismo Virgencita de Luján -1--img-modal"/>
+<div id="Madera Cuadros puntillismo Virgencita de Luján -1--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros puntillismo Virgencita de Luján -1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -1--cant" max="1" min="0" name="madera/Madera Cuadros puntillismo Virgencita de Luján -1-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -1--price" name="madera/Madera Cuadros puntillismo Virgencita de Luján -1-" type="hidden" value="15000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -1--weight" name="madera/Madera Cuadros puntillismo Virgencita de Luján -1-" type="hidden" value="280"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros puntillismo Virgencita de Luján -1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pintado a mano con técnica puntillismo, 25 x 18 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUADROS PUNTILLISMO children" style="padding:0.3em">
+<a name="Madera Cuadros puntillismo Virgencita de Luján -2-"></a>
+<div class="card h-100 c-madera-CUADROS PUNTILLISMO children" id="id-madera/Madera Cuadros puntillismo Virgencita de Luján -2-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Virgencita de Luján -2--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGENCITA DE LUJÁN -2- 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Cuadros puntillismo Virgencita de Luján -2--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+        VIRGENCITA DE LUJÁN -2- 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$15000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Cuadros puntillismo Virgencita de Luján -2--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera cuadro puntillismo virgencita de luján-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Cuadros puntillismo Virgencita de Luján -2--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Cuadros puntillismo Virgencita de Luján -2--img-modal"/>
+<div id="Madera Cuadros puntillismo Virgencita de Luján -2--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Cuadros puntillismo Virgencita de Luján -2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -2--cant" max="1" min="0" name="madera/Madera Cuadros puntillismo Virgencita de Luján -2-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -2--price" name="madera/Madera Cuadros puntillismo Virgencita de Luján -2-" type="hidden" value="15000"/>
+<input class="weight" form="myform" id="madera/Madera Cuadros puntillismo Virgencita de Luján -2--weight" name="madera/Madera Cuadros puntillismo Virgencita de Luján -2-" type="hidden" value="280"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Cuadros puntillismo Virgencita de Luján -2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pintado a mano con técnica puntillismo, 25 x 18 cm
+  </div> </div>
+</div>
+
+</div> <div class="row">
+<div class="myh3 caret" onclick="toggleByClass('c-madera-CUNEROS');return false;" style="background:Tan;padding:0.5em;text-align:center;color:black;"> 
+          CUNEROS
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUNEROS children" style="padding:0.3em">
+<a name="Madera Corazones pintados-1-"></a>
+<div class="card h-100 c-madera-CUNEROS children" id="id-madera/Madera Corazones pintados-1-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Corazones pintados-1--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-1-</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Corazones pintados-1--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-1-</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$7000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Corazones pintados-1--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera corazones pintados-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Corazones pintados-1--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Corazones pintados-1--img-modal"/>
+<div id="Madera Corazones pintados-1--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Corazones pintados-1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Corazones pintados-1--cant" max="100" min="0" name="madera/Madera Corazones pintados-1-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Corazones pintados-1--price" name="madera/Madera Corazones pintados-1-" type="hidden" value="7000"/>
+<input class="weight" form="myform" id="madera/Madera Corazones pintados-1--weight" name="madera/Madera Corazones pintados-1-" type="hidden" value="90"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Corazones pintados-1--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUNEROS children" style="padding:0.3em">
+<a name="Madera Corazones pintados-2-"></a>
+<div class="card h-100 c-madera-CUNEROS children" id="id-madera/Madera Corazones pintados-2-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Corazones pintados-2--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-2-</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Corazones pintados-2--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-2-</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$7000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Corazones pintados-2--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera corazones pintados-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Corazones pintados-2--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Corazones pintados-2--img-modal"/>
+<div id="Madera Corazones pintados-2--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Corazones pintados-2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Corazones pintados-2--cant" max="100" min="0" name="madera/Madera Corazones pintados-2-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Corazones pintados-2--price" name="madera/Madera Corazones pintados-2-" type="hidden" value="7000"/>
+<input class="weight" form="myform" id="madera/Madera Corazones pintados-2--weight" name="madera/Madera Corazones pintados-2-" type="hidden" value="90"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Corazones pintados-2--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUNEROS children" style="padding:0.3em">
+<a name="Madera Corazones pintados-3-"></a>
+<div class="card h-100 c-madera-CUNEROS children" id="id-madera/Madera Corazones pintados-3-">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Corazones pintados-3--narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-3-</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Corazones pintados-3--wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       CORAZONES 
+      <span style="color:grey">pintados-3-</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$7000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Corazones pintados-3--img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera corazones pintados-3-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Corazones pintados-3--img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Corazones pintados-3--img-modal"/>
+<div id="Madera Corazones pintados-3--img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Corazones pintados-3--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Corazones pintados-3--cant" max="100" min="0" name="madera/Madera Corazones pintados-3-" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Corazones pintados-3--price" name="madera/Madera Corazones pintados-3-" type="hidden" value="7000"/>
+<input class="weight" form="myform" id="madera/Madera Corazones pintados-3--weight" name="madera/Madera Corazones pintados-3-" type="hidden" value="90"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Corazones pintados-3--cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-madera-CUNEROS children" style="padding:0.3em">
+<a name="Madera Redondeles cuneritos"></a>
+<div class="card h-100 c-madera-CUNEROS children" id="id-madera/Madera Redondeles cuneritos">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Madera Redondeles cuneritos-narrow-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       REDONDELES 
+      <span style="color:grey">cuneritos</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Madera Redondeles cuneritos-wide-screen','details');return false; " style="background-color:Tan;color:black; min-height:6ex ;cursor: pointer;">   
+       REDONDELES 
+      <span style="color:grey">cuneritos</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$5000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Madera Redondeles cuneritos-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/madera redondeles cuneritos.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Madera Redondeles cuneritos-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Madera Redondeles cuneritos-img-modal"/>
+<div id="Madera Redondeles cuneritos-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('madera/Madera Redondeles cuneritos-cant');return false;" style="background-color:Tan;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="madera/Madera Redondeles cuneritos-cant" max="100" min="0" name="madera/Madera Redondeles cuneritos" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="madera/Madera Redondeles cuneritos-price" name="madera/Madera Redondeles cuneritos" type="hidden" value="5000"/>
+<input class="weight" form="myform" id="madera/Madera Redondeles cuneritos-weight" name="madera/Madera Redondeles cuneritos" type="hidden" value="50"/>
+<div class="btn quiero" onclick="addToCart('madera/Madera Redondeles cuneritos-cant');return false;" style="background-color:Tan;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Cunero colgante redondo.  8 cm de diámetro.  Pintado a mano - Motivo infantil -
+  </div> </div>
+</div>
+</div> 
+</div>
+</div>
+<div class="c-parent" id="id-varios" style="display:block;">
+
+
+<div class="row" style=" margin:2ex 1ex 0em 0em; padding: 0ex 1em">
+<a name="varios"></a>
+<div class="myh2">
+<div class="caret parent-caret" id="id-varios-caret" onclick="toggleById('id-varios-content');return false;" style="background:DarkKhaki;color:black;text-align:center;padding:0.5em">
+    VARIOS
+    </div>
+</div>
+</div>
+<div class="parent-content" id="id-varios-content">
+<p style="text-align: center;">
+</p>
+<div class="row">
+
+<div class="myh3 caret" onclick="toggleByClass('c-varios-ESCAPULARIOS Y DETENTES');return false;" style="background:DarkKhaki;padding:0.5em;text-align:center;color:black;"> 
+          ESCAPULARIOS Y DETENTES
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESCAPULARIOS Y DETENTES children" style="padding:0.3em">
+<a name="Detentes - Protección del Sagrado Corazón de Jesús"></a>
+<div class="card h-100 c-varios-ESCAPULARIOS Y DETENTES children" id="id-varios/Detentes - Protección del Sagrado Corazón de Jesús">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Detentes - Protección del Sagrado Corazón de Jesús-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       DETENTES 
+      <span style="color:grey">- protección del sagrado corazón de jesús</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Detentes - Protección del Sagrado Corazón de Jesús-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       DETENTES 
+      <span style="color:grey">- protección del sagrado corazón de jesús</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Detentes - Protección del Sagrado Corazón de Jesús-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/detentes.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Detentes - Protección del Sagrado Corazón de Jesús-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Detentes - Protección del Sagrado Corazón de Jesús-img-modal"/>
+<div id="Detentes - Protección del Sagrado Corazón de Jesús-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Detentes - Protección del Sagrado Corazón de Jesús-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Detentes - Protección del Sagrado Corazón de Jesús-cant" max="100" min="0" name="varios/Detentes - Protección del Sagrado Corazón de Jesús" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Detentes - Protección del Sagrado Corazón de Jesús-price" name="varios/Detentes - Protección del Sagrado Corazón de Jesús" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Detentes - Protección del Sagrado Corazón de Jesús-weight" name="varios/Detentes - Protección del Sagrado Corazón de Jesús" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Detentes - Protección del Sagrado Corazón de Jesús-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Pequeña imagen del Sagrado Corazón de Jesús sobre paño rojo, con la inscripción "¡Detente! El Sagrado Corazón de Jesús está conmigo" -    5x4 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESCAPULARIOS Y DETENTES children" style="padding:0.3em">
+<a name="Escapulario chico"></a>
+<div class="card h-100 c-varios-ESCAPULARIOS Y DETENTES children" id="id-varios/Escapulario chico">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Escapulario chico-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       ESCAPULARIO 
+      <span style="color:grey">chico</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Escapulario chico-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       ESCAPULARIO 
+      <span style="color:grey">chico</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Escapulario chico-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/escapulario chico.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Escapulario chico-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Escapulario chico-img-modal"/>
+<div id="Escapulario chico-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Escapulario chico-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Escapulario chico-cant" max="100" min="0" name="varios/Escapulario chico" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Escapulario chico-price" name="varios/Escapulario chico" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Escapulario chico-weight" name="varios/Escapulario chico" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Escapulario chico-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Confeccionados con tela e hilo macramé . Con la imagen de la Virgen del Carmen- 3,5x2,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESCAPULARIOS Y DETENTES children" style="padding:0.3em">
+<a name="Escapulario Grande"></a>
+<div class="card h-100 c-varios-ESCAPULARIOS Y DETENTES children" id="id-varios/Escapulario Grande">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Escapulario Grande-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       ESCAPULARIO 
+      <span style="color:grey">grande</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Escapulario Grande-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       ESCAPULARIO 
+      <span style="color:grey">grande</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$2000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Escapulario Grande-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/escapulario grande.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Escapulario Grande-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Escapulario Grande-img-modal"/>
+<div id="Escapulario Grande-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Escapulario Grande-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Escapulario Grande-cant" max="100" min="0" name="varios/Escapulario Grande" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Escapulario Grande-price" name="varios/Escapulario Grande" type="hidden" value="2000"/>
+<input class="weight" form="myform" id="varios/Escapulario Grande-weight" name="varios/Escapulario Grande" type="hidden" value="2"/>
+<div class="btn quiero" onclick="addToCart('varios/Escapulario Grande-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Confeccionados con tela y cola de rata- Imagen de la Virgen del Carmen y Sagrado Corazón  5,5x4 cm
+  </div> </div>
+</div>
+
+</div> <div class="row">
+<div class="myh3 caret" onclick="toggleByClass('c-varios-ESTAMPAS DE FLORES');return false;" style="background:DarkKhaki;padding:0.5em;text-align:center;color:black;"> 
+          ESTAMPAS DE FLORES
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESTAMPAS DE FLORES children" style="padding:0.3em">
+<a name="Estampas de Flores Nada te turbe -1"></a>
+<div class="card h-100 c-varios-ESTAMPAS DE FLORES children" id="id-varios/Estampas de Flores Nada te turbe -1">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -1-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -1 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -1-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -1 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Estampas de Flores Nada te turbe -1-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/estampas flores nada te turbe-1-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Estampas de Flores Nada te turbe -1-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Estampas de Flores Nada te turbe -1-img-modal"/>
+<div id="Estampas de Flores Nada te turbe -1-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Estampas de Flores Nada te turbe -1-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Estampas de Flores Nada te turbe -1-cant" max="1" min="0" name="varios/Estampas de Flores Nada te turbe -1" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Estampas de Flores Nada te turbe -1-price" name="varios/Estampas de Flores Nada te turbe -1" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Estampas de Flores Nada te turbe -1-weight" name="varios/Estampas de Flores Nada te turbe -1" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Estampas de Flores Nada te turbe -1-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESTAMPAS DE FLORES children" style="padding:0.3em">
+<a name="Estampas de Flores Nada te turbe -2"></a>
+<div class="card h-100 c-varios-ESTAMPAS DE FLORES children" id="id-varios/Estampas de Flores Nada te turbe -2">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -2-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -2 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -2-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -2 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Estampas de Flores Nada te turbe -2-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/estampas flores nada te turbe-2-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Estampas de Flores Nada te turbe -2-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Estampas de Flores Nada te turbe -2-img-modal"/>
+<div id="Estampas de Flores Nada te turbe -2-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Estampas de Flores Nada te turbe -2-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Estampas de Flores Nada te turbe -2-cant" max="1" min="0" name="varios/Estampas de Flores Nada te turbe -2" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Estampas de Flores Nada te turbe -2-price" name="varios/Estampas de Flores Nada te turbe -2" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Estampas de Flores Nada te turbe -2-weight" name="varios/Estampas de Flores Nada te turbe -2" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Estampas de Flores Nada te turbe -2-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESTAMPAS DE FLORES children" style="padding:0.3em">
+<a name="Estampas de Flores Nada te turbe -3"></a>
+<div class="card h-100 c-varios-ESTAMPAS DE FLORES children" id="id-varios/Estampas de Flores Nada te turbe -3">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -3-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -3 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -3-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -3 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Estampas de Flores Nada te turbe -3-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/estampas flores nada te turbe-3-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Estampas de Flores Nada te turbe -3-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Estampas de Flores Nada te turbe -3-img-modal"/>
+<div id="Estampas de Flores Nada te turbe -3-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Estampas de Flores Nada te turbe -3-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Estampas de Flores Nada te turbe -3-cant" max="1" min="0" name="varios/Estampas de Flores Nada te turbe -3" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Estampas de Flores Nada te turbe -3-price" name="varios/Estampas de Flores Nada te turbe -3" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Estampas de Flores Nada te turbe -3-weight" name="varios/Estampas de Flores Nada te turbe -3" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Estampas de Flores Nada te turbe -3-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESTAMPAS DE FLORES children" style="padding:0.3em">
+<a name="Estampas de Flores Nada te turbe -4"></a>
+<div class="card h-100 c-varios-ESTAMPAS DE FLORES children" id="id-varios/Estampas de Flores Nada te turbe -4">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -4-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -4 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -4-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -4 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Estampas de Flores Nada te turbe -4-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/estampas flores nada te turbe-4-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Estampas de Flores Nada te turbe -4-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Estampas de Flores Nada te turbe -4-img-modal"/>
+<div id="Estampas de Flores Nada te turbe -4-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Estampas de Flores Nada te turbe -4-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Estampas de Flores Nada te turbe -4-cant" max="1" min="0" name="varios/Estampas de Flores Nada te turbe -4" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Estampas de Flores Nada te turbe -4-price" name="varios/Estampas de Flores Nada te turbe -4" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Estampas de Flores Nada te turbe -4-weight" name="varios/Estampas de Flores Nada te turbe -4" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Estampas de Flores Nada te turbe -4-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ESTAMPAS DE FLORES children" style="padding:0.3em">
+<a name="Estampas de Flores Nada te turbe -5"></a>
+<div class="card h-100 c-varios-ESTAMPAS DE FLORES children" id="id-varios/Estampas de Flores Nada te turbe -5">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -5-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -5 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Estampas de Flores Nada te turbe -5-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       NADA TE TURBE -5 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1200</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Estampas de Flores Nada te turbe -5-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/estampas flores nada te turbe-5-.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Estampas de Flores Nada te turbe -5-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Estampas de Flores Nada te turbe -5-img-modal"/>
+<div id="Estampas de Flores Nada te turbe -5-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Estampas de Flores Nada te turbe -5-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Estampas de Flores Nada te turbe -5-cant" max="1" min="0" name="varios/Estampas de Flores Nada te turbe -5" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Estampas de Flores Nada te turbe -5-price" name="varios/Estampas de Flores Nada te turbe -5" type="hidden" value="1200"/>
+<input class="weight" form="myform" id="varios/Estampas de Flores Nada te turbe -5-weight" name="varios/Estampas de Flores Nada te turbe -5" type="hidden" value="1"/>
+<div class="btn quiero" onclick="addToCart('varios/Estampas de Flores Nada te turbe -5-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+  </div> </div>
+</div>
+
+</div> <div class="row">
+<div class="myh3 caret" onclick="toggleByClass('c-varios-ROSARIOS');return false;" style="background:DarkKhaki;padding:0.5em;text-align:center;color:black;"> 
+          ROSARIOS
+      </div>
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ROSARIOS children" style="padding:0.3em">
+<a name="Rosarios 24 glorias Sta. Teresita"></a>
+<div class="card h-100 c-varios-ROSARIOS children" id="id-varios/Rosarios 24 glorias Sta. Teresita">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Rosarios 24 glorias Sta. Teresita-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       24 GLORIAS STA. TERESITA 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Rosarios 24 glorias Sta. Teresita-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       24 GLORIAS STA. TERESITA 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$1800</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Rosarios 24 glorias Sta. Teresita-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/rosarios-24-glorias-sta-teresita.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Rosarios 24 glorias Sta. Teresita-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Rosarios 24 glorias Sta. Teresita-img-modal"/>
+<div id="Rosarios 24 glorias Sta. Teresita-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Rosarios 24 glorias Sta. Teresita-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Rosarios 24 glorias Sta. Teresita-cant" max="100" min="0" name="varios/Rosarios 24 glorias Sta. Teresita" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Rosarios 24 glorias Sta. Teresita-price" name="varios/Rosarios 24 glorias Sta. Teresita" type="hidden" value="1800"/>
+<input class="weight" form="myform" id="varios/Rosarios 24 glorias Sta. Teresita-weight" name="varios/Rosarios 24 glorias Sta. Teresita" type="hidden" value="8"/>
+<div class="btn quiero" onclick="addToCart('varios/Rosarios 24 glorias Sta. Teresita-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Rosario  de 24 cuentas, en honor de los 24 años de vida de Sta. Teresita del Niño Jesús.  Con estampa explicativa (14,5x10 cm)
+  </div> </div>
+</div>
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-varios-ROSARIOS children" style="padding:0.3em">
+<a name="Rosarios Cola de rata"></a>
+<div class="card h-100 c-varios-ROSARIOS children" id="id-varios/Rosarios Cola de rata">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Rosarios Cola de rata-narrow-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       COLA DE RATA 
+      <span style="color:grey"></span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Rosarios Cola de rata-wide-screen','details');return false; " style="background-color:DarkKhaki;color:black; min-height:6ex ;cursor: pointer;">   
+       COLA DE RATA 
+      <span style="color:grey"></span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$3000</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Rosarios Cola de rata-img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/rosario cola de rata.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Rosarios Cola de rata-img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Rosarios Cola de rata-img-modal"/>
+<div id="Rosarios Cola de rata-img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('varios/Rosarios Cola de rata-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="varios/Rosarios Cola de rata-cant" max="100" min="0" name="varios/Rosarios Cola de rata" placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="varios/Rosarios Cola de rata-price" name="varios/Rosarios Cola de rata" type="hidden" value="3000"/>
+<input class="weight" form="myform" id="varios/Rosarios Cola de rata-weight" name="varios/Rosarios Cola de rata" type="hidden" value="8"/>
+<div class="btn quiero" onclick="addToCart('varios/Rosarios Cola de rata-cant');return false;" style="background-color:DarkKhaki;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+    Rosario de bolsillo, con cuentas de madera pequeñas y cruz acorde.  Sencillo y práctico para nuestra oración cotidiana a la Virgen María.
+  </div> </div>
+</div>
+</div> 
+</div>
+</div>
+<div class="c-parent" id="id-velas" style="display:block;">
+
+
+<div class="row" style=" margin:2ex 1ex 0em 0em; padding: 0ex 1em">
+<a name="velas"></a>
+<div class="myh2">
+<div class="caret parent-caret" id="id-velas-caret" onclick="toggleById('id-velas-content');return false;" style="background:Thistle;color:black;text-align:center;padding:0.5em">
+    VELAS
+    </div>
+</div>
+</div>
+<div class="parent-content" id="id-velas-content">
+<p style="text-align: center;">
+</p>
+<div class="row">
+
+
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 c-velas- children" style="padding:0.3em">
+<a name="Velas Litúrgicas de Cera de abeja  (CHICAS) "></a>
+<div class="card h-100 c-velas- children" id="id-velas/Velas Litúrgicas de Cera de abeja  (CHICAS) ">
+<h3 class="card-header narrow-screen" onclick="expandCard('/detail.Velas Litúrgicas de Cera de abeja  (CHICAS) -narrow-screen','details');return false; " style="background-color:Thistle;color:black; min-height:6ex ;cursor: pointer;">   
+       LITÚRGICAS 
+      <span style="color:grey">de cera de abeja</span>
+</h3>
+<h3 class="card-header wide-screen" onclick="expandCard('/detail.Velas Litúrgicas de Cera de abeja  (CHICAS) -wide-screen','details');return false; " style="background-color:Thistle;color:black; min-height:6ex ;cursor: pointer;">   
+       LITÚRGICAS 
+      <span style="color:grey">de cera de abeja</span>
+</h3>
+<div style="margin-bottom:-0.1em;padding:0em 0.4em">
+<span style="float:left;">
+</span>
+<span style="float:right;z-index: 10;  position: relative; ">$6500</span>
+</div>
+<div style="text-align: center">
+
+<img alt="" class="myimg" id="Velas Litúrgicas de Cera de abeja  (CHICAS) -img" onclick="window.open(this.src);return false; " src="https://carmelitasbariloche.github.io/data/images/vela cera de abeja chica.jpg" style="height:auto;margin-bottom:0px;  cursor: pointer;z-index: 1;  position: relative; "/>
+
+</div>
+<div class="modal" id="Velas Litúrgicas de Cera de abeja  (CHICAS) -img-modal-class">
+<span class="close">×</span>
+<img class="modal-content" id="Velas Litúrgicas de Cera de abeja  (CHICAS) -img-modal"/>
+<div id="Velas Litúrgicas de Cera de abeja  (CHICAS) -img-caption"></div>
+</div>
+
+<div class="row" style="padding:1em 0;text-align:center">
+
+<div class="col mx-auto">
+<div class="row">
+<div class="col-md-12">
+<div class="btn-group">
+
+<div class="btn quiero" onclick="removeFromCart('velas/Velas Litúrgicas de Cera de abeja  (CHICAS) -cant');return false;" style="background-color:Thistle;">
+<i class="fa fa-minus"></i>
+</div>
+
+<input class="cantidad" form="myform" id="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) -cant" max="100" min="0" name="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) " placeholder="0" style="width:2em;font-size:1.5em;" type="number" value="0"/>
+<input class="price" form="myform" id="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) -price" name="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) " type="hidden" value="6500"/>
+<input class="weight" form="myform" id="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) -weight" name="velas/Velas Litúrgicas de Cera de abeja  (CHICAS) " type="hidden" value="235"/>
+<div class="btn quiero" onclick="addToCart('velas/Velas Litúrgicas de Cera de abeja  (CHICAS) -cant');return false;" style="background-color:Thistle;">
+<i class="fa fa-plus"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding:1em 1em; text-align:center;font-size:smaller">
+<p>CHICAS</p> Elaboradas con CERA DE ABEJAS. Aptas para uso en la Santa Misa u otros actos litúrgicos y devocionales. 5,5X 10,5 cm
+  </div> </div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mycol wrapper sidebar sidebar-right wide-screen">
+<div style="text-align: center;margin:2ex 0">
+
+
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="showAll('b-parent','c-parent');location.href='#first';return false;" style="background-color:white"> 
+    TODOS
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-cerámica','b-parent','c-parent');location.href='#cerámica';return false;" style="background-color:LightSteelBlue"> 
+    CERÁMICA
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-cuero','b-parent','c-parent');location.href='#cuero';return false;" style="background-color:PaleGoldenRod"> 
+    CUERO
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-madera','b-parent','c-parent');location.href='#madera';return false;" style="background-color:Tan"> 
+    MADERA
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-varios','b-parent','c-parent');location.href='#varios';return false;" style="background-color:DarkKhaki"> 
+    VARIOS
+   </button>
+</div>
+<div>
+<button class="w3-button w3-container my-container b-parent" onclick="openParents(event,'id-velas','b-parent','c-parent');location.href='#velas';return false;" style="background-color:Thistle"> 
+    VELAS
+   </button>
+</div>
+
+</div>
+<div style="margin-bottom:4ex;"></div>
+
+<div class="myh2 bg-light-1" style="margin-bottom:1ex ">Links</div>
+
+<hr style="border:1px solid rgb(200,200,200)"/>
+<a href="#" onclick="alert('Horarios de misa\n\n\n* Lunes a Viernes 18hs\n\n* Sábados y Domingos: 11hs');return false">Horarios de misa</a>
+<div style="margin-bottom:1ex;"></div>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="https://maps.app.goo.gl/GWnDiSpQmEzwKVXt5" rel="noopener noreferrer" target="_blank">Mapa: Bustillo km 19,5 ~ Bariloche ~ ARG</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="tel:+542944448456" rel="noopener noreferrer" target="_blank">tel: 294 444-8456</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="mailto: trabajosocd@gmail.com" rel="noopener noreferrer" target="_blank">e-mail: trabajosocd @ gmail.com</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="https://parroquiasaneduardo.com.ar" rel="noopener noreferrer" target="_blank">Parroquia San Eduardo</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<div style="margin-top:30vh">
+<hr/><p style="font-size: 80%;"><span style="float:left; ">22/08</span><span style="float:right">16:26</span></p>
+</div>
+<div style="margin-bottom:10ex;"></div>
+</div>
+<div class="container-fluid narrow-screen">
+
+
+<a name="pedido"></a>
+<div class="myh2 bg-light-1">
+                Pedido de compra
+            </div>
+
+<div class="row" style="padding:1em;text-align:center">
+<p class="col-12">
+<p style="text-align: left;">Nos comunicamos a la brevedad para confirmar tu pedido y que puedas abonarlo.</p>
+</p>
+<div class="col-12">
+
+
+
+
+
+
+
+
+
+
+
+<form action="#" id="myform" name="myform">
+
+<textarea class="js-test-textarea pedido" style="width: 100%; height:100%;padding:1em 0em; max-width:700px;max-height:300px;line-height: 2ex;">
+  
+    </textarea>
+</form>
+<div style="max-width:700px;">
+<span style="float:left;">
+<button class="resetCarts" type="submit">Resetear</button>
+</span>
+<span style="float:right;">
+<button class="sendCarts" id="sendCart2" type="submit">ENVIAR</button>
+</span>
+</div>
+
+
+
+
+
+</div>
+<div class="col-12">
+
+</div>
+<div class="col-12" style="margin-top:2ex">
+<p>Hacemos envíos a todo el país.</p><p>Podés retirar gratis en el Monasterio de lunes a viernes de 9 a 12hs</p>
+</div>
+</div>
+
+<div class="myh2 bg-light-1" style="margin-bottom:1ex ">Links</div>
+
+<hr style="border:1px solid rgb(200,200,200)"/>
+<a href="#" onclick="alert('Horarios de misa\n\n\n* Lunes a Viernes 18hs\n\n* Sábados y Domingos: 11hs');return false">Horarios de misa</a>
+<div style="margin-bottom:1ex;"></div>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="https://maps.app.goo.gl/GWnDiSpQmEzwKVXt5" rel="noopener noreferrer" target="_blank">Mapa: Bustillo km 19,5 ~ Bariloche ~ ARG</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="tel:+542944448456" rel="noopener noreferrer" target="_blank">tel: 294 444-8456</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="mailto: trabajosocd@gmail.com" rel="noopener noreferrer" target="_blank">e-mail: trabajosocd @ gmail.com</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<p style="padding:0ex ; text-align: left"><a href="https://parroquiasaneduardo.com.ar" rel="noopener noreferrer" target="_blank">Parroquia San Eduardo</a></p>
+<hr style="border:1px solid rgb(200,200,200)"/>
+
+
+<div style="margin-top:30vh">
+<hr/><p style="font-size: 80%;"><span style="float:left; ">22/08</span><span style="float:right">16:26</span></p>
+</div>
+<div style="margin-bottom:10ex;"></div>
+<div style="margin-bottom:3ex;"></div>
+</div>
+<div style=" width: 100%;">
+
+<style>
+  /*.footer {
+    position: fixed;    left: 0;    bottom: 0;
+    width: 100%;overflow:auto; 
+    white-space:nowrap;   background-color: black;    color: white;    text-align: right;    margin-right:2rem; font-size:0.8em;
+  }*/
+  .footerr {
+    position: fixed;  
+    bottom: 0;
+    width: 100%;
+    max-height: 40%;
+    overflow:scroll; 
+    /*white-space:nowrap;   */
+    background-color: grey;    
+    color: white;    text-align: left; font-size:1em;
+/*    padding-top:0em;
+    padding-right:1em;*/
+    padding: 0em;
+    /*margin-right:-1em;*/
+    z-index: 99;
+  }
+.li-horizontal{
+  /*float: left;*/
+ margin-left: -0.2em}
+  </style>
+<p style="margin-top:6ex">
+</p>
+<div class="footerr">
+<div class="details" id="/detail.Cerámica cruces souvenir-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  cruces souvenir </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Cruz colgante de cerámica con el Niño Jesús - Diseños exclusivos - Ideal para cuneros o la habitación de los niños. 6,5x5,5 cm 
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Pesebre-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  pesebre </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pesebre artesanal - Diseños exclusivos. 14x9,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Rosario engarzados (perfume de Rosas con cajita)-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  rosario engarzados </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Rosario engarzado con cuentas de cerámica realizadas de manera artesanal.  Perfume de rosas. Incluye cajita portarosario.
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Virgen embarazada-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  virgen embarazada </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Imagen de la Virgen María, advocación "Nuestra Señora de la Dulce Espera!"- Diseños exclusivos -19,5 x 6,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Niños Jesús-1--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  -1- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Niños Jesús-2--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  -2- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Niños Jesús-3--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  -3- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cerámica Niños Jesús-4--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:LightSteelBlue;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  -4- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cuero Evangelio con estuche pirograbado-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:PaleGoldenRod;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  evangelio con estuche pirograbado </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Los cuatro Evangelios en formato bolsillo en su estuche de cuero vacuno pirograbado. 9x13,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Cuero señalador-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:PaleGoldenRod;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  señalador </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Realizados en cuero vacuno. Pirograbados. 15,5x7 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros Pasta piedra Virgen María -GRANDE--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   virgen maría -grande- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. 40x30 cm - 1 cm grosor de la madera
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros Pasta piedra Virgen María -MEDIO--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   virgen maría -medio- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Virgen María en un diseño infantil. Pintada y modelada a mano en Pasta Piedra. <p>32x26 cm 1 cm grosor de la madera</p>
+
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros puntillismo Sagrada Familia -1--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   sagrada familia -1- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros puntillismo Sagrada Familia -2--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   sagrada familia -2- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pintado a mano con técnica puntillismo. 22,5 x 19,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros puntillismo Virgencita de Luján -1--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   virgencita de luján -1- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pintado a mano con técnica puntillismo, 25 x 18 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Cuadros puntillismo Virgencita de Luján -2--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>   virgencita de luján -2- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pintado a mano con técnica puntillismo, 25 x 18 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Corazones pintados-1--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  corazones pintados-1- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Corazones pintados-2--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  corazones pintados-2- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Corazones pintados-3--narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  corazones pintados-3- </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Cunero colgante: Corazón pintado a mano,  con motivo infantil. 11,5 x 10,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Madera Redondeles cuneritos-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Tan;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  redondeles cuneritos </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Cunero colgante redondo.  8 cm de diámetro.  Pintado a mano - Motivo infantil -
+     
+</div>
+</div>
+<div class="details" id="/detail.Detentes - Protección del Sagrado Corazón de Jesús-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3> detentes - protección del sagrado corazón de jesús </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Pequeña imagen del Sagrado Corazón de Jesús sobre paño rojo, con la inscripción "¡Detente! El Sagrado Corazón de Jesús está conmigo" -    5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Escapulario chico-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3> escapulario chico </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Confeccionados con tela e hilo macramé . Con la imagen de la Virgen del Carmen- 3,5x2,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Escapulario Grande-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3> escapulario grande </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Confeccionados con tela y cola de rata- Imagen de la Virgen del Carmen y Sagrado Corazón  5,5x4 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Estampas de Flores Nada te turbe -1-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  nada te turbe -1 </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Estampas de Flores Nada te turbe -2-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  nada te turbe -2 </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Estampas de Flores Nada te turbe -3-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  nada te turbe -3 </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Estampas de Flores Nada te turbe -4-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  nada te turbe -4 </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Estampas de Flores Nada te turbe -5-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  nada te turbe -5 </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Señaladores en papel reciclado. Diseño artísitico con flores de Bariloche. 15x7,5 cm
+     
+</div>
+</div>
+<div class="details" id="/detail.Rosarios 24 glorias Sta. Teresita-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  24 glorias sta. teresita </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Rosario  de 24 cuentas, en honor de los 24 años de vida de Sta. Teresita del Niño Jesús.  Con estampa explicativa (14,5x10 cm)
+     
+</div>
+</div>
+<div class="details" id="/detail.Rosarios Cola de rata-narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:DarkKhaki;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  cola de rata </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Rosario de bolsillo, con cuentas de madera pequeñas y cruz acorde.  Sencillo y práctico para nuestra oración cotidiana a la Virgen María.
+     
+</div>
+</div>
+<div class="details" id="/detail.Velas Litúrgicas de Cera de abeja  (CHICAS) -narrow-screen" style="display: none;width:100%;  overflow-y: scroll; margin-bottom:2em;">
+<span style="float:right;">
+<button aria-label="Close Account Info Modal Box" class="close-details" style="font-size: 2em">×</button>
+</span>
+<hr style="border:1px solid rgb(200,200,200)"/>
+<div style="background-color:Thistle;text-align:center;color:black;padding-top:1ex;padding-bottom:1ex">
+<h3>  litúrgicas de cera de abeja </h3>
+</div>
+<div style="text-align:left;padding: 0em 1em;font-size: smaller;overflow-y: scroll;">
+      Elaboradas con CERA DE ABEJAS. Aptas para uso en la Santa Misa u otros actos litúrgicos y devocionales. 5,5X 10,5 cm
+     
+</div>
+</div>
+</div>
+ </div>
+</body>
+<style>
+table, th, td {
+  border:1px solid black;
+  width:100%;
+}
+html {
+  font-size: 62.5%; 
+}
+body {
+  font-size: 1.8em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 800;
+  font-family: "Times New Roman";
+  color: rgba(132,132,132,1); 
+  /*#222; */
+}
+
+.bg-light {
+  /*background: #EFEFEF;*/
+    background-color:#333;
+}
+
+.bg-light-1 {
+  background-color:beige;
+  /*rgba(191,43,8,0.1);*/
+}
+
+.title-color{
+  color:rgba(100,65,23,1);
+  /* janus green rgba(103,149,40,1);*/
+/**/
+}
+
+/*mobile-only 1200px*/
+@media only screen and (max-width: 868px) {
+body {
+  background-color: rgba(39,39,39,1);
+  background-color:beige;
+}
+}
+
+@media only screen and (min-width: 868px) {
+body {
+background-color:beige;
+/*rgba(60, 179, 113,0.1)*/
+/*(191,43,8,0.1)*/
+
+}
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  /*Esto es para que no se pueda mover horizontalmente*/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*font-family: Arial;*/
+}
+:root {
+    --colRemarkRow:rgba(255,153,102,1);
+    --colBgRow:rgba(255,153,102,0.7);
+
+    /*
+      NarajaJanus:
+        hex: #ff9966;
+        rgba(255,153,102,1)
+    
+      Verde Janus: 
+        hex: #679528
+        rgba(103,149,40,1);
+        */
+    /*
+      rojo
+    rgba(191,43,8,0.3);*/
+    
+    /*
+      verde
+    rgba(91,143,81,0.2);*/
+
+    --colBgRemark:rgba(255,153,102,1);
+    /*rgba(191,43,8,0.7);*/
+
+    --colBg4-1:rgba(191,43,8,0.7);
+    --colBg4-2:rgba(191,43,8,0.5);   
+    --colBg4-3:rgba(191,43,8,0.3);
+    --colBg4-4:rgba(191,43,8,0.1);
+}
+
+
+
+
+a:link, a:visited {
+    color:rgba(87,101,40,1); /* 255,153,102,1);
+    /*#0c6090;*/
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0c6090;
+    /*#c06050;*/
+    text-decoration: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  margin-top:2ex;
+  padding: 0ex 1em;
+  font-size: 1.7em;
+  font-weight: 800; 
+  letter-spacing:0.08em;
+  background-color:rgba(191,43,8,0.1);
+  width:100%;
+}
+
+.myh2 {
+  margin-top:2ex;
+  margin-right:-12em;
+  /*padding: 0ex 1em;*/
+  font-size: 1.7em;
+  font-weight: 800; 
+  letter-spacing:0.08em;
+  background-color:beige;
+  /* medio rojo: rgba(191,43,8,0.1);*/
+  width:100%;
+  text-align:left;
+}
+
+.myh3 {
+  margin-top:3ex;
+  font-size: 1.2em;
+  font-weight: 700; 
+  letter-spacing:0.08em;
+  width:100%;
+  text-align:left;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: Arial; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+</style>
+<script language="Javascript">
+
+
+
+
+
+function expandImg(element){
+//NO ANDA... el element no tiene src ni alt
+// Get the modal
+var modal = document.getElementById(element.id+"-modal-class");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById(element.id);
+var modalImg = document.getElementById(element.id+"-modal");
+var captionText = document.getElementById(element.id+"-caption");
+console.log("expandImg")
+console.log(element)
+console.log(element.src)
+console.log(modalImg.src)
+
+modal.style.display = "block";
+modalImg.src = element.src;
+
+
+
+
+captionText.innerHTML = element.alt;
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+}
+var current_parent='todos'
+var current_child='all'
+
+// window.addEventListener("hashchange", function() { scrollBy(0, 250) })
+
+function sendCart(text) {
+    printCart();
+
+    var element = document.createElement('a');
+
+    var texto=encodeURIComponent(text);
+
+    var http="http://wa.me/"+ 542944506063 +"?text=" + texto
+    element.setAttribute('href',http );
+    element.setAttribute('target',"_blank");
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+// {
+// Start file download.
+// document.getElementById("sendCart").addEventListener("click", function(){
+// var carritos=document.getElementsByClassName("sendCarts")
+// for (var i = 0; i < carritos.length ;i++) {
+//     carritos[i].addEventListener("click", function(){
+//     // Generate download of hello.txt file with some content
+//     var text =createCart()
+//     var oldWord="<br "
+//     var reg = new RegExp("<br />", "g");
+//     var newtext=text.replace(reg, "\r\n");  
+//     sendCart(newtext);
+//     }, false);
+// }
+// }
+
+var userSelection = document.getElementsByClassName('sendCarts');
+
+for(var i = 0; i < userSelection.length; i++) {
+  (function(index) {
+    userSelection[index].addEventListener("click", function() {
+
+    var text =createCart()
+    var oldWord="<br "
+    var reg = new RegExp("<br />", "g");
+    var newtext=text.replace(reg, "\r\n");  
+    sendCart(newtext);
+     },false)
+  })(i);
+}
+
+var userSelection = document.getElementsByClassName('resetCarts');
+
+for(var i = 0; i < userSelection.length; i++) {
+  (function(index) {
+    userSelection[index].addEventListener("click", resetCart,false)
+  })(i);
+}
+
+var userSelection = document.getElementsByClassName('searchOptions');
+
+for(var i = 0; i < userSelection.length; i++) {
+  (function(index) {
+    userSelection[index].addEventListener("click", showAll('b-parent','c-parent'),false)
+  })(i);
+}
+
+function showId(myid) {
+  current_parent=myid
+  // console.log('showid: '+current_parent)
+  let x0 = document.getElementById(myid);
+  x0.style.display = "block";
+}
+
+function showCarretById(myid) {
+  showId(myid+'-content')
+  caretDownById(myid+'-caret')
+}
+
+function caretDownById(myid) {
+  let x = document.getElementById(myid);
+    x.className = x.className.replace(" caret-down", "");
+    x.className = x.className.replace(" caret", "");
+    x.className += " caret";
+}
+
+
+function caretUp(myclass) {
+  let i, x = document.getElementsByClassName(myclass);
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" caret-down", "");
+    x[i].className = x[i].className.replace(" caret", "");
+    x[i].className += " caret-down";
+  }
+}
+
+function caretDown(myclass) {
+  let i, x = document.getElementsByClassName(myclass);
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" caret-down", "");
+    x[i].className = x[i].className.replace(" caret", "");
+    x[i].className += " caret";
+  }
+}
+
+function showClass(myclass) {
+  let i, x = document.getElementsByClassName(myclass);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "block";
+  }
+}
+
+function toggleByClass(myclass) {
+  let i, x = document.getElementsByClassName(myclass);
+
+  for (i = 0; i < x.length; i++) {
+    if (x[i].style.display === "none") {
+      x[i].style.display = "block";
+    } else {
+      x[i].style.display = "none";
+    }
+  }
+}
+
+function toggleById(myid) {
+  let x0 = document.getElementById(myid);
+  if (x0.style.display === "none") {
+    x0.style.display = "block";
+  } else {
+    x0.style.display = "none";
+  }
+}
+
+function showAll(mylinks,myclass) {
+
+  current_parent='todos'
+
+  showClass(myclass);
+
+  // saco el sombreado de los botones
+  let i,tablinks = document.getElementsByClassName(mylinks);
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+
+  caretDown('parent-caret');
+  showClass('parent-content');
+
+}
+
+
+
+  showClass('parent-content');
+  toggleByClass('parent-content');
+  caretUp('parent-caret');
+
+function expandCard(myid,myclass) {
+
+  var x0 = document.getElementById(myid);
+  if (x0.style.display === "none") {
+    x0.style.display = "block";
+  } else {
+    x0.style.display = "none";
+  }
+
+  x = document.getElementsByClassName(myclass);
+
+  for (i = 0; i < x.length; i++) {
+    if(x[i]!=x0){
+    x[i].style.display = "none";
+    }
+  }
+}
+
+function openParents(evt, myid,mylinks,myclass) {
+  
+  current_parent=myid
+
+  var i, x, x0,tablinks;
+  x0=document.getElementById(myid);
+  x = document.getElementsByClassName(myclass);
+
+  var showingall=1;
+
+  for (i = 0; i < x.length; i++) {
+
+    if (x[i].style.display === "none") {
+      showingall=0;
+    }
+
+    if(x[i]!=x0){
+    x[i].style.display = "none";
+    }
+  }
+
+
+  tablinks = document.getElementsByClassName(mylinks);
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+
+  if(showingall===0){
+  if (x0.style.display === "none") {
+    x0.style.display = "block";
+    evt.currentTarget.className += " w3-red";
+  } else {
+    x0.style.display = "none";
+  }
+  }else{
+    evt.currentTarget.className += " w3-red";
+  }
+
+  showCarretById(myid)
+  // document.getElementById(myid).style.display = "block";
+}
+
+function addToCart(idNAME){
+  var myelement = document.getElementById(idNAME);
+ var num = parseInt(myelement.value,10);
+ var max = parseInt(myelement.max,10);
+ if(num< max){
+
+  myelement.value++
+}
+ var cantidad = myelement.value
+
+  printCart();
+}
+function addToCartStock(idNAME,stock){
+  var myelement = document.getElementById(idNAME);
+  // var cantidad = myelement.value
+  // console.log(cantidad)
+  myelement.value++
+// var cantidad = myelement.value
+  // console.log(cantidad)
+  printCart();
+}
+
+function removeFromCart(idNAME){
+  var myelement = document.getElementById(idNAME);
+  if(myelement.value>0){
+  myelement.value--;
+  printCart();
+  }
+}
+
+function createCart(){
+// var x = document.querySelectorAll(".intro");
+// document.getElementById("demo").innerHTML = 
+// 'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;  
+  var myclass;
+  myclass = document.getElementsByClassName("cantidad");
+  console.log(myclass)
+  const now = new Date();
+  var month =now.getUTCMonth()+1
+  var text = "";//now.getUTCFullYear()+"-"+month+"-"+now.getUTCDate()+"\n\n";
+  var preciototal=0,cantidadtotal=0,pesototal=0;
+  for (var i = 0; i < myclass.length ;i++) {    
+    var cantidad=myclass[i].value; //encodeURIComponent(myclass[i].value)
+    var name=myclass[i].name
+    var myid=name+"-price"
+    var weight_id=name+"-weight"
+
+    var myid_var=name+"-var"
+    var aux=name.split("/");
+     console.log(name);
+    // console.log(aux);
+    var productname=aux[aux.length-1];
+
+    // console.log(productname);
+    myarticle = document.getElementById(myid);
+    myweight = document.getElementById(weight_id);
+
+
+//    text += x.elements[i].value + "<br>";
+  if(cantidad>0){
+    var precio_vec=myarticle.value.split("|"); //encodeURIComponent(myarticle.value)
+    var peso_vec=myweight.value.split("|"); 
+    // console.log(precio_vec)
+
+    var price_index=0;
+
+    myvar = document.getElementById(myid_var);
+    if(myvar){
+    if(myvar.value>precio_vec.length){
+      myvar.value=precio_vec.length
+    }
+    price_index=myvar.value-1;
+    }
+    var precio=precio_vec[price_index];
+    var peso=peso_vec[price_index];
+    cantidadtotal=cantidadtotal+parseInt(cantidad);
+    preciototal+=(cantidad*precio);
+    pesototal+=(cantidad*peso);
+    //text += "("+ cantidad + ") "+ name + ": ["+ cantidad + " x $"+ precio +"] <br />";
+    // text +=  "* "+ name + ": ["+ cantidad + " x $"+ precio +"] \n";
+     text +=  "* "+ productname + ": ["+ cantidad + " x $"+ precio +"]\n";
+  }
+  
+  }
+
+  var visitantes = document.getElementsByClassName("visitantes");
+  var visitan=0
+  for (var i = 0; i < visitantes.length ;i++) {    
+    var cantidad=visitantes[i].value;
+    var name=visitantes[i].name
+    var myvar=name+"-var"
+    my_visitante = document.getElementById(myvar);
+    visitan+=parseInt(my_visitante.value);
+  }
+  if(visitan>0){
+      text += "\nCant. de visitantes: "+visitan
+  }
+  
+  pasajeros = document.getElementsByClassName("pasajeros");
+  var duermen=0
+  for (var i = 0; i < pasajeros.length ;i++) {    
+    var cantidad=pasajeros[i].value;
+    var name=pasajeros[i].name
+    var myid=name+"-cant"
+    my_noche = document.getElementById(myid);
+
+    if(my_noche.value>=1){
+      var myvar=name+"-var"
+      my_pasajero = document.getElementById(myvar);
+      duermen+=parseInt(my_pasajero.value);
+    }
+  }
+  if(duermen>0){
+      text += "\nCant. de personas: "+duermen
+  }
+
+
+
+  parador = document.getElementsByClassName("parador");
+  var costodeenvio=0;
+  if(parador){
+  text += "\nCant. de productos: "+cantidadtotal
+
+  if(cantidadtotal>0){  
+    // if(xx.COSTODEENVIO>0){
+    // text+="\n";
+    costodeenvio=0  
+    preciototal+=costodeenvio
+    // text += "\nCosto de envio: $"+costodeenvio+"\n"
+    // }
+  }
+
+  // var fecha  = document.getElementById("fecha-inicio").value;
+  // fecha="\nFecha llegada: "+fecha+"\n"
+  }else{
+    // fecha=""
+  }
+    // return text += "<br /><br /> Importe total: $"+ preciototal+" <br /><br />";
+  text += "\nImporte total: $"+ preciototal+"\n";
+  if(cantidadtotal>0){  
+    if(parseInt(pesototal)<150){
+    costodeenvio=8500 ;
+    }else{
+    if(parseInt(pesototal)<400){
+      costodeenvio=10000;
+    }else{
+      costodeenvio=15000;
+    }
+    }
+    
+    text += "\n---------------\nCosto de envio: $"+costodeenvio+"\nGratis retirando en el monasterio\n"
+    //text += "\n---------------\nPeso total: "+pesototal+"gr\n"
+
+    //text+="\nMercado Pago\nAlias: carmelitas.bariloche"
+  }
+  return text
+}
+
+function printCart(){
+  var text=createCart()
+  // document.getElementById("carrito").innerHTML = text;
+  // document.getElementById("carrito").value = text;
+  // textAreaAdjust(document.getElementById('carrito') );
+
+  var pedidos=document.getElementsByClassName("pedido")
+  for (var i = 0; i < pedidos.length ;i++) { 
+    pedidos[i].value = text;
+   textAreaAdjust(pedidos[i]);
+  }
+  
+  
+}
+
+
+window.addEventListener('load', printCart() )
+//window.onload=printCart;
+
+function resetCart(){
+  // var text=createCart()
+  // // document.getElementById("carrito").innerHTML = text;
+  // document.getElementById("carrito").value = "";
+  // textAreaAdjust(document.getElementById('carrito') );
+  var myclass,i;
+  myclass = document.getElementsByClassName("cantidad");
+  for (i = 0; i < myclass.length ;i++) { 
+    myclass[i].value="0"
+    myclass[i].placeholder="0"
+  }
+    myclass = document.getElementsByClassName("pasajeros");
+  for (i = 0; i < myclass.length ;i++) { 
+    myclass[i].value="1"
+    myclass[i].placeholder="1"
+  }
+
+  var text=createCart()
+  
+
+  // document.getElementById("carrito").value = text;
+  // textAreaAdjust(document.getElementById('carrito') );
+  var pedidos=document.getElementsByClassName("pedido")
+  for (var i = 0; i < pedidos.length ;i++) { 
+    pedidos[i].value = text;
+   textAreaAdjust(pedidos[i]);
+  }
+}
+
+// $(document).ready(function(){
+
+//   textAreaAdjust(document.getElementById('carrito') );
+// });
+
+function textAreaAdjust(o) {
+  o.style.height = "1px";
+  o.style.height = (o.scrollHeight)+"px";
+  // o.style.width = "1px";
+  // o.style.width = (o.scrollWidth)+"px";
+}
+
+
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    // this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+} 
+
+
+var close = document.getElementsByClassName("close-details");
+
+for (let i = 0; i < close.length; i++) {
+  close[i].addEventListener("click", function() {
+    let pedidos = document.getElementsByClassName("details");
+      for (let j = 0; j < pedidos.length; j++) {
+        pedidos[j].style.display = "none";
+    }
+  });
+} 
+</script>
+<script language="Javascript">
+
+var article={}
+const catalog=[]
+  
+  catalog[1]={title:" cruces souvenir",id:"Cerámica cruces souvenir",parent:"cerámica",child:""}
+  
+  catalog[2]={title:" pesebre",id:"Cerámica Pesebre",parent:"cerámica",child:""}
+  
+  catalog[3]={title:" rosario engarzados",id:"Cerámica Rosario engarzados (perfume de Rosas con cajita)",parent:"cerámica",child:""}
+  
+  catalog[4]={title:" virgen embarazada",id:"Cerámica Virgen embarazada",parent:"cerámica",child:""}
+  
+  catalog[5]={title:" -1-",id:"Cerámica Niños Jesús-1-",parent:"cerámica",child:"NIÑOS JESÚS"}
+  
+  catalog[6]={title:" -2-",id:"Cerámica Niños Jesús-2-",parent:"cerámica",child:"NIÑOS JESÚS"}
+  
+  catalog[7]={title:" -3-",id:"Cerámica Niños Jesús-3-",parent:"cerámica",child:"NIÑOS JESÚS"}
+  
+  catalog[8]={title:" -4-",id:"Cerámica Niños Jesús-4-",parent:"cerámica",child:"NIÑOS JESÚS"}
+  
+  catalog[9]={title:" evangelio con estuche pirograbado",id:"Cuero Evangelio con estuche pirograbado",parent:"cuero",child:""}
+  
+  catalog[10]={title:" señalador",id:"Cuero señalador",parent:"cuero",child:""}
+  
+  catalog[11]={title:"  virgen maría -grande-",id:"Madera Cuadros Pasta piedra Virgen María -GRANDE-",parent:"madera",child:"CUADROS PASTA PIEDRA"}
+  
+  catalog[12]={title:"  virgen maría -medio-",id:"Madera Cuadros Pasta piedra Virgen María -MEDIO-",parent:"madera",child:"CUADROS PASTA PIEDRA"}
+  
+  catalog[13]={title:"  sagrada familia -1-",id:"Madera Cuadros puntillismo Sagrada Familia -1-",parent:"madera",child:"CUADROS PUNTILLISMO"}
+  
+  catalog[14]={title:"  sagrada familia -2-",id:"Madera Cuadros puntillismo Sagrada Familia -2-",parent:"madera",child:"CUADROS PUNTILLISMO"}
+  
+  catalog[15]={title:"  virgencita de luján -1-",id:"Madera Cuadros puntillismo Virgencita de Luján -1-",parent:"madera",child:"CUADROS PUNTILLISMO"}
+  
+  catalog[16]={title:"  virgencita de luján -2-",id:"Madera Cuadros puntillismo Virgencita de Luján -2-",parent:"madera",child:"CUADROS PUNTILLISMO"}
+  
+  catalog[17]={title:" corazones pintados-1-",id:"Madera Corazones pintados-1-",parent:"madera",child:"CUNEROS"}
+  
+  catalog[18]={title:" corazones pintados-2-",id:"Madera Corazones pintados-2-",parent:"madera",child:"CUNEROS"}
+  
+  catalog[19]={title:" corazones pintados-3-",id:"Madera Corazones pintados-3-",parent:"madera",child:"CUNEROS"}
+  
+  catalog[20]={title:" redondeles cuneritos",id:"Madera Redondeles cuneritos",parent:"madera",child:"CUNEROS"}
+  
+  catalog[21]={title:"detentes - protección del sagrado corazón de jesús",id:"Detentes - Protección del Sagrado Corazón de Jesús",parent:"varios",child:"ESCAPULARIOS Y DETENTES"}
+  
+  catalog[22]={title:"escapulario chico",id:"Escapulario chico",parent:"varios",child:"ESCAPULARIOS Y DETENTES"}
+  
+  catalog[23]={title:"escapulario grande",id:"Escapulario Grande",parent:"varios",child:"ESCAPULARIOS Y DETENTES"}
+  
+  catalog[24]={title:" nada te turbe -1",id:"Estampas de Flores Nada te turbe -1",parent:"varios",child:"ESTAMPAS DE FLORES"}
+  
+  catalog[25]={title:" nada te turbe -2",id:"Estampas de Flores Nada te turbe -2",parent:"varios",child:"ESTAMPAS DE FLORES"}
+  
+  catalog[26]={title:" nada te turbe -3",id:"Estampas de Flores Nada te turbe -3",parent:"varios",child:"ESTAMPAS DE FLORES"}
+  
+  catalog[27]={title:" nada te turbe -4",id:"Estampas de Flores Nada te turbe -4",parent:"varios",child:"ESTAMPAS DE FLORES"}
+  
+  catalog[28]={title:" nada te turbe -5",id:"Estampas de Flores Nada te turbe -5",parent:"varios",child:"ESTAMPAS DE FLORES"}
+  
+  catalog[29]={title:" 24 glorias sta. teresita",id:"Rosarios 24 glorias Sta. Teresita",parent:"varios",child:"ROSARIOS"}
+  
+  catalog[30]={title:" cola de rata",id:"Rosarios Cola de rata",parent:"varios",child:"ROSARIOS"}
+  
+  catalog[31]={title:" litúrgicas de cera de abeja",id:"Velas Litúrgicas de Cera de abeja  (CHICAS) ",parent:"velas",child:""}
+
+// var current_parent = 'todos'
+
+//shortens document.getEgetElementById
+function element(id) {
+return document.getElementById(id);
+}
+let allSearchData = ""; //decleared to collect all search names
+
+//gets each inputs data starting from second input
+function getResults_old(countid) {
+//gets value of input
+let search = element("search-input"+countid).value;
+allSearchData = ""; //clears data for each word typed
+
+hideSearchResults(countid);
+clearSearchResults(countid);
+clearSearchData(countid); //
+//starts searching from the second input
+if (search.length > 1) {
+    let counter = 0; // counts to 10
+    // ArticlesNames se define en el archivo article.title.js
+    for (let x of ArticlesNames) {
+    if (counter < 15) {
+        //checks for similarities
+        if (x.toLowerCase().includes(search.toLowerCase())) {
+        console.log(current_parent)
+        //populates the suggestion div
+           // "<button onclick=\"showAll('b-parent','c-parent');return false;\"><a style='color:red;' href='#" 
+        element("search-results"+countid).innerHTML +=
+            "<input type=button onClick=\"showAll('b-parent','c-parent');location.href='#"
+            + x + "'\" value='"+ x +"'>"
+            // "' ><p style='padding-left:0.3em'>" +
+            // x +
+            // "</p></a></button>            ";
+
+            // "<div class='search-item' style='color:red' onclick='displayData(\"" +
+            // x +
+            // "\")'><p>" +
+            // x +
+            // "</p></div>";
+
+        counter++;
+        }
+    }
+    if (x.toLowerCase().includes(search.toLowerCase()))
+        //saves all the realated names
+        allSearchData += "<p>" + x + "</p>";
+    }
+    displaySearchResults(countid);
+}
+}
+//gets each inputs data starting from second input
+function getResults(countid) {
+
+//gets value of input
+let search = element("search-input"+countid).value;
+allSearchData = ""; //clears data for each word typed
+
+hideSearchResults(countid);
+clearSearchResults(countid);
+clearSearchData(countid); //
+
+
+// Strips diacritics from a string
+// Example: removeDiacritics('ï') -> 'i'
+const removeDiacritics = str => {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+}
+
+// Determines if a haystack contains a needle.  Case and accent insensitive.
+// Example: normalizedContains('Le Samouraï', 'I') -> true
+const normalizedContains = (haystack, needle) => {
+  const regExp = new RegExp(removeDiacritics(needle), 'gi');
+  return regExp.test(removeDiacritics(haystack));
+}
+
+//starts searching from the second input
+if (search.length > 1) {
+    let counter = 0; // counts to 10
+    // ArticlesNames se define en el archivo article.title.js
+    // for (let article of catalog) {
+    let parent=current_parent.replace('id-','').replace('-content','')
+    element("search-results"+countid).innerHTML ='<p> Esta buscando dentro de '+parent.toUpperCase()+':</p>'
+    for(let i=1;i<catalog.length;i++){
+        article=catalog[i];
+        let x=article.id; //article.title
+        let p=article.parent
+        let id=article.id
+        if (parent=='todos'){
+            p=parent
+        }
+        if (counter < 25) {
+            //checks for similarities
+            // if (x.toLowerCase().includes(search.toLowerCase()) && p==parent) {
+            if (normalizedContains(x,search) && p==parent) {
+            //                 console.log(article) 
+            // console.log(current_parent)
+            //populates the suggestion div
+               // "<button onclick=\"showAll('b-parent','c-parent');return false;\"><a style='color:red;' href='#" 
+               // "<input type=button onClick=\"showAll('b-parent','c-parent');location.href='#"
+            element("search-results"+countid).innerHTML +=
+                "<input class='search-buttons' type=button onClick=\"showCarretById('id-"+article.parent+"');return location.href='#"
+                + id + "';\" value='"+ x +"'>"
+                // window.scrollBy(0, 550);
+                // "' ><p style='padding-left:0.3em'>" +
+                // x +
+                // "</p></a></button>            ";
+
+                // "<div class='search-item' style='color:red' onclick='displayData(\"" +
+                // x +
+                // "\")'><p>" +
+                // x +
+                // "</p></div>";
+
+            counter++;
+            }
+        }
+    if (x.toLowerCase().includes(search.toLowerCase()) && p==current_parent)
+        //saves all the realated names
+        allSearchData += "<p>" + x + "</p>";
+    }
+    displaySearchResults(countid);
+}
+}
+//displays the suggestion div
+function displaySearchResults(countid) {
+element("search-results"+countid).style.display = "block";
+}
+//clears the suggestion div
+function clearSearchResults(countid) {
+element("search-results"+countid).innerHTML = "";
+}
+
+//hides the suggestion div
+function hideSearchResults(countid) {
+element("search-results"+countid).style.display = "none";
+}
+//displays names when you click a suggestions
+function displayData(name,countid) {
+element("search-data"+countid).innerHTML = "<p style='color:blue'>" + name + "</p>";
+hideSearchResults(countid);
+}
+//displays all related names to your search when you hit enter
+function displayAllData(names,countid) {
+element("search-data"+countid).innerHTML = names;
+hideSearchResults(countid);
+}
+//clears names displayed from search result
+function clearSearchData(countid) {
+element("search-data"+countid).innerHTML = "";
+}
+//gets results after each input
+element("search-input1").oninput = function() {
+getResults(1);
+};
+element("search-input2").oninput = function() {
+getResults(2);
+};
+
+// element("search-input1").addEventListener("keyup", function(event) {
+// // Number 13 is the "Enter" key on the keyboard
+// if (event.keyCode === 13) {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     displayAllData(allSearchData,1);
+// }
+// });
+
+
+// element("search-input2").addEventListener("keyup", function(event) {
+// // Number 13 is the "Enter" key on the keyboard
+// if (event.keyCode === 13) {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     displayAllData(allSearchData,2);
+// }
+// });
+
+
+</script>
+</html>
