@@ -1,10 +1,10 @@
 name: Update index.html
 
 on:
-  push:
-    paths:
-      - 'data/**'
-      - '!index.html'   # avoid infinite loop on index.html updates
+ # push:
+ #   paths:
+ #     - 'data/**'
+ #     - '!index.html'   # avoid infinite loop on index.html updates
 
 jobs:
   build:
