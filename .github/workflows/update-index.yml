@@ -26,7 +26,8 @@ jobs:
 
       - name: Generate index.html
         run: |
-          python src/main.py
+          python main.py
+        working-directory: src/
 
       - name: Commit changes
         run: |

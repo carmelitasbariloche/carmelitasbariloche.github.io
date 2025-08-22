@@ -1,5 +1,6 @@
 import conf as xx
 
+
 # fname='../data/productos.csv'
 
 from myfuncs import *
