@@ -1,5 +1,3 @@
-
-
 AUTHOR= 'CarmBrc'
 SITENAME= 'Carmelitas Bariloche'
 if 'BRANDNAME' not in locals():
@@ -48,7 +46,7 @@ if 'LINKS' not in locals():
 input_files=['../data/WEB CARMELITAS.csv']
 if 'output_file' not in locals():
   print('entro en output')
-  output_file='../index.html'
+  output_file='../public/index.html'
 
 #template_subdir:
 subdir='productos'
@@ -61,9 +59,9 @@ if 'only' not in parents:
 parents['name']='Categorias'
 parents['col_title']='categorias'
 
-parents['undesired']=['parador','entrega semanal']
+parents['undesired']=['parador']
 
-parents['first']=['entrega semanal','frescos','elaborados']
+parents['first']=['entrega semanal','frescos']
 parents['last']=['esenciales']
 parents['long_names']={'frescos':'productos frescos','elaborados':'productos elaborados'}
 parents['mensajes']={'elaborados':""}
@@ -75,11 +73,6 @@ if 'articles' not in locals():
 if 'only' not in articles:
   articles['only']=[]
   
-
-articles['prefix']='un'
-articles['word']='producto'
-articles['limited']={'entrega semanal':1,'bolsón':1,'caña con ruda':1}
-
 #PEDIDOS
 pedido=True
 
