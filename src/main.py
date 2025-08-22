@@ -9,6 +9,9 @@ home = str(Path.home())
 import myfuncs as my
 
 
+sys.path.append('/config')
+sys.path.append('/src/config')
+
 def main():
 	import render
 	#render.main()
