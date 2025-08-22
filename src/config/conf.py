@@ -24,7 +24,7 @@ def showEMAIL(email):
 
 
 IMG_DIR='../data/images/'
-IMG_DIR='https://carmelitasbariloche.github.io/data/images/'
+IMG_DIR='https://carmelitasbariloche.github.io/images/'
 IMG_DIR_PRODUCTS=IMG_DIR+""
 ImagenMostrador= 'https://www.parroquiasaneduardo.com.ar/images/Carmelitas1_web.jpg'
 ImagenMostrador= IMG_DIR+'carmelo-y-sta-teresa.jpg'
