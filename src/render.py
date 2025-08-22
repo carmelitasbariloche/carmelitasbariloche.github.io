@@ -13,12 +13,12 @@ def main():
 	importlib.reload(xx)
 
 	import locale 
-	locale.setlocale(locale.LC_TIME, 'es_AR.UTF-8')
+	locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 	from datetime import datetime
 	today = datetime.now()
 	css="<hr><p style='font-size: 80%;'><span style='float:left'>Última actualización: </span>"
 	css="<hr><p style='font-size: 80%;'>"
-	fecha = "<span style='float:left; '>"+today.strftime("%d de %B")+"</span>"
+	fecha = "<span style='float:left; '>"+today.strftime("%d/%m")+"</span>"
 	hora = "<span style='float:right'>"+today.strftime("%H:%M")+"</span>"
 
 	xx.fecha=css+fecha+hora+'</p>'
