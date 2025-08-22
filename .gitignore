@@ -1,13 +1,13 @@
 # Ignore compiled Python files
-*.pyc
-__pycache__/
+**/*.pyc
+**/__pycache__/
 
 
 # Ignore log files
-*.log
+**/*.log
 
 # Ignore OS-generated files
-.DS_Store
+**/.DS_Store
 Thumbs.db
 
 # Ignore sensitive information
