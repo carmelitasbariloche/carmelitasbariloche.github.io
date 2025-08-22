@@ -6,6 +6,9 @@
 # Ignore log files
 **/*.log
 
+# Ignore lock excel files
+**/.lock*#
+
 # Ignore OS-generated files
 **/.DS_Store
 Thumbs.db

@@ -5,6 +5,13 @@ on:
     paths:
       - 'data/**'
       - '!index.html'   # avoid infinite loop on index.html updates
+  workflow_dispatch:    # allow manual trigger too
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 
 jobs:
   build:
@@ -36,3 +43,29 @@ jobs:
           git add index.html
           git diff --cached --quiet || git commit -m "Auto-update index.html"
           git push
+
+      - name: Prepare deploy folder
+        run: |
+          mkdir deploy
+          cp index.html deploy/
+          cp -r data/images deploy/images
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./deploy
+
+
+  # Single deploy job since we're just deploying
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
