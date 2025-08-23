@@ -1,4 +1,4 @@
-name: Build index and deploy
+name: Build index from json and deploy
 
 on:
   push:
