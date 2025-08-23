@@ -1,5 +1,6 @@
 ## Datos
 
+* la base de datos esta en la carpeta `/data`
 *	la base de datos principal es el archivo excel: `web-repositorio.xlsx`
 *	la base datos temporal, es `web-repositorio.json`
 
