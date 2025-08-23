@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'data/web-repositorio.xlsx'
+      - 'data/web-repositorio.json'
       - '!index.html'   # avoid infinite loop on index.html updates
   workflow_dispatch:    # allow manual trigger too
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate index.html
         run: |
-          python main.py
+          python main.py 'json-conf'
         working-directory: src/
 
       - name: Upload artifact

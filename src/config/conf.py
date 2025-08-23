@@ -1,3 +1,4 @@
+
 AUTHOR= 'CarmBrc'
 SITENAME= 'Carmelitas Bariloche'
 if 'BRANDNAME' not in locals():
@@ -18,7 +19,6 @@ if 'COSTODEENVIO' not in locals():
   COSTODEENVIO=10000
 
 
-print(EMAIL.split('@'))
 def showEMAIL(email):
   return email.replace('@',' @ ')
 
@@ -44,6 +44,21 @@ if 'LINKS' not in locals():
     )
 
 input_files=['../data/WEB CARMELITAS.csv']
+
+
+if 'input_file' not in locals():
+  input_file={}
+
+input_file['path']='../data/'
+input_file['name']='web-repositorio'
+
+print(input_file)
+
+if 'ext' not in input_file:
+  input_file['ext']='xlsx'
+
+
+
 if 'output_file' not in locals():
   print('entro en output')
   output_file='../public/index.html'

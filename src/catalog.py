@@ -4,49 +4,42 @@ import conf as xx
 # fname='../data/productos.csv'
 
 from myfuncs import *
+import json
+
 
 def set_catalog():
 	catalog=[]
 	#for file in xx.input_files:
 	#	catalog.extend(ReadCSV(file))
 
+	file_name = xx.input_file['path']+xx.input_file['name']
 
-	# Example usage:
-	file_path = "../data/"
-	file_name = "web-repositorio"
+	if xx.input_file['ext'] in 'xlsx':
+		excel_data = list(read_xlsx_as_dict_list(file_name+'.xlsx',3))
 
-	excel_data = list(read_xlsx_as_dict_list(file_path+file_name+'.xlsx',3))
+		for element in excel_data:
+			for key in list(element):
+			    if key is None:
+			    	del element[key]
 
-	for element in excel_data:
-		for key in list(element):
-		    if key is None:
-		    	del element[key]
-	
+		# Specify the output file name
+		output_file = file_name+".json"
 
+		# Open the file in write mode and use json.dump() to write the data
+		with open(output_file, "w", encoding='utf-8') as f:
+		    json.dump(excel_data, f, ensure_ascii=False, indent=4) # 'indent=4' makes the JSON output human-readable
 
+		print(f"Data successfully written to {output_file} from {file_name}.xlsx")
 
+	if xx.input_file['ext'] in 'json':
+	    with open(file_name+'.json', 'r') as f:
+	        excel_data = json.load(f)
 
-	import json
-
-
-	# Specify the output file name
-	output_file = file_path+file_name+".json"
-
-	# Open the file in write mode and use json.dump() to write the data
-	with open(output_file, "w", encoding='utf-8') as f:
-	    json.dump(excel_data, f, ensure_ascii=False, indent=4) # 'indent=4' makes the JSON output human-readable
-
-	print(f"Data successfully written to {output_file}")
-
-
-
-	if excel_data:
-	    for row in excel_data:
-	        print(row)
+    
 
 	catalog.extend(excel_data)
 
-	#print(catalog)
+	
 
 	catalog.sort(key=lambda k: k[xx.parents['col_title']])
 

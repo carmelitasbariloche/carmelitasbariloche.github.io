@@ -64,7 +64,8 @@ import re
 import math
 def set_article(article):	
 	#print(type(article["precio"]))
-	print(article["title"])
+	#print(article["title"])
+
 	article["imagen"]=article["imagen"].lower()
 	#Aumento el precio!
 	aumento=int(article["precio"])*1 #.15
@@ -145,9 +146,9 @@ def set_article(article):
 
 	
 	#al titulo le saco la categoria que tenga
-	print('myfuncs.py -> categories_list')
+	#print('myfuncs.py -> categories_list')
 	for w in categories_list:
-		print(w)
+		#print(w)
 		categoria=w.lower();
 		if categoria in article['title'].lower():
 			article['title']=article['title'].replace(categoria,'')	
@@ -155,8 +156,8 @@ def set_article(article):
 			categoria=categoria[:-1]	
 			if categoria in article['title'].lower():
 				article['title']=article['title'].replace(categoria,'')		
-	print(article["title"])
-	print('-----')
+	#print(article["title"])
+	#print('-----')
 	
 	#al título le saco los paréntesis que tenga
 	if '(' and ')' in article["title"]:
@@ -193,17 +194,17 @@ def Enpadronar(article):
 	# 	return
 
 	if 'Nombre' in article:
-		print("###########")
-		print(article["Nombre"])
+		#print("###########")
+		#print(article["Nombre"])
 		if article['Nombre']!= '' and article['Nombre']!= None:
 			return
 
 	article['Nombre']=''
 	lista=article['title'].split()
-	print('2222222')
+	#print('2222222')
 	if len(lista)==0:
 		lista=['-1']
-	print(lista)
+	#print(lista)
 	def set_name(article,lista):
 	# la primer palabra siempre esta dentro del nombre
 		if len(lista)>1:
@@ -220,7 +221,7 @@ def Enpadronar(article):
 	if set_name(article,lista):
 		return
 
-	print(lista)
+	#print(lista)
 	preposiciones=['de','con','en']
 	if lista[0] in preposiciones:
 # si la 2da palabra es 'de', 'con', ... entonces empieza el apellido
