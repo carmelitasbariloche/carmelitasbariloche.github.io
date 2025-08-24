@@ -39,13 +39,13 @@ jobs:
         uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c # v46
         with:
           files: |
-            misa:
-              - data/horarios-de-misa.md
-            json:
-              - data/web-repositorio.json
-            excel:
-              - data/web-repositorio.xlsx
+            misa: data/horarios-de-misa.md
+            json: data/web-repositorio.json
+            excel: data/web-repositorio.xlsx
 
+      - name: Generate index.html
+        run: |
+          echo "List all the files that have changed: $MISA_ALL_CHANGED_FILES"
 
       - name: misa file change
         # NOTE: Ensure all outputs are prefixed by the same key used above e.g. `test_(...)` | `doc_(...)` | `src_(...)` when trying to access the `any_changed` output.
