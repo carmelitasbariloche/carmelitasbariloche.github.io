@@ -318,5 +318,15 @@
         "imagen": "Cerámica Niño Jesús-4-",
         "descripcion": "Imagen artesanal del Niño Jesús con aureola y cunita - 5x4 cm",
         "ubicacion-fotos": "..\\..\\Pictures\\A TRABAJOS WEB\\Cerámica\\Niños Jesús\\Cerámica Niño Jesús 4.jpg"
+    },
+    {
+        "title": "Alfajores del Carmelo",
+        "stock": 100,
+        "precio": 9000,
+        "peso": 350,
+        "categorias": "VARIOS",
+        "imagen": "alfajores",
+        "descripcion": "Alfajores caseros de dulce de leche bañados en chocolate (4 de chocolate negro y 2 de chocolate blanco)",
+        "ubicacion-fotos": null
     }
 ]
