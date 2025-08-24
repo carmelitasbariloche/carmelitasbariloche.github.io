@@ -51,18 +51,21 @@ jobs:
         # NOTE: Ensure all outputs are prefixed by the same key used above e.g. `test_(...)` | `doc_(...)` | `src_(...)` when trying to access the `any_changed` output.
         if: steps.changed-files.outputs.misa_any_changed == 'true'  
         run: |
+          echo "misa file has changed."
           python main.py 'horarios-de-misa'
         working-directory: src/
 
       - name: excel file change
         if: steps.changed-files.outputs.excel_any_changed == 'true'  
         run: |
+          echo "excel file has changed."
           python main.py 
         working-directory: src/
 
       - name: json file change
         if: steps.changed-files.outputs.json_any_changed == 'true'  && steps.changed-files.outputs.excel_any_changed == 'false'  
         run: |
+          echo "json file has changed and excel has not."        
           python main.py 'json-conf'
         working-directory: src/
 
