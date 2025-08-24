@@ -49,11 +49,11 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.modified_files }}; do
             echo "Processing $file"
-            if [file == 'data/horarios-de-misa.md']
+            if [file == 'data/horarios-de-misa.md']; then
               python main.py 'horarios-de-misa'
-            elif [file == 'data/web-repositorio.xlsx]
+            elif [file == 'data/web-repositorio.xlsx]; then
               python main.py
-            elif [file == 'data/web-repositorio.json]
+            elif [file == 'data/web-repositorio.json]; then
               python main.py 'json-conf'
             fi
           done
