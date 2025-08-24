@@ -1,12 +1,12 @@
-name: Build index and deploy
+name: Build index from json and deploy
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'data/web-repositorio.xlsx'
-      - '!index.html'   # avoid infinite loop on index.html updates
+      - 'data/**.{json,md}'
+      - '!public/index.html'   # avoid infinite loop on index.html updates
   workflow_dispatch:    # allow manual trigger too
 
 permissions:
@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate index.html
         run: |
-          python main.py
+          python main.py 'json-conf'
         working-directory: src/
 
       - name: Upload artifact

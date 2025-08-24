@@ -7,10 +7,9 @@ from myfuncs import *
 import json
 
 
-def set_catalog():
-	catalog=[]
-	#for file in xx.input_files:
-	#	catalog.extend(ReadCSV(file))
+
+def read_catalog():
+
 
 	file_name = xx.input_file['path']+xx.input_file['name']
 
@@ -35,11 +34,20 @@ def set_catalog():
 	    with open(file_name+'.json', 'r') as f:
 	        excel_data = json.load(f)
 
+	return excel_data
+
     
 
-	catalog.extend(excel_data)
-
 	
+
+
+def set_catalog():
+
+	catalog=[]
+	#for file in xx.input_files:
+	#	catalog.extend(ReadCSV(file))
+	
+	catalog.extend(read_catalog())
 
 	catalog.sort(key=lambda k: k[xx.parents['col_title']])
 

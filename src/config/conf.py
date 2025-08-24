@@ -2,6 +2,8 @@
 
 
 
+
+
 AUTHOR= 'CarmBrc'
 SITENAME= 'Carmelitas Bariloche'
 if 'BRANDNAME' not in locals():
@@ -112,7 +114,17 @@ mensaje['pedido2']= " <p>Hacemos envíos a todo el país.</p><p>Podés retirar g
 
 
 
-fecha="fecha de hoy"
+try:
+    with open('../data/horarios-de-misa.md', 'r', newline='') as file:
+        text = file.read()
+        content=text.replace("\n","\\n")
+        print(content)
+except FileNotFoundError:
+    print("../data/horarios-de-misa.md no esta. Usamos default")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
 
-if 'horarios' not in mensaje:
-  mensaje['horarios']='Horarios de misa\\n\\n\\n* Lunes a Viernes: 18hs\\n\\n* Sábados y Domingos: 11hs'
+if content == '':
+    content='Horarios de misa\\n\\n\\n* Lunes a Viernes: 18hs\\n\\n* Sábados y Domingos: 11hs'
+
+mensaje['horarios']=content
