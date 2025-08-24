@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'data/**.{json,md}'
+      - 'data/**.json'
+      - 'data/**.md'
       - '!public/index.html'   # avoid infinite loop on index.html updates
   workflow_dispatch:    # allow manual trigger too
 
