@@ -2,7 +2,7 @@
 
 * la base de datos esta en la carpeta `/data`
 *	la base de datos principal es el archivo excel: `web-repositorio.xlsx`
-*	la base datos temporal, es `web-repositorio.json`
+*	la base datos temporal es `web-repositorio.json`
 
 ### Modificación
 
@@ -17,6 +17,10 @@
 Para hacer modificaciones rápidas, se puede editar online (desde github) el archivo `web-repositorio.json` (e.g. para poner en stock cero algun producto).
 
 Estas modificaciones se sobreescriben la próxima vez que se carga un archivo excel, i.e. eventualmente hay que hacerlas en el excel si se quieren permanentes.
+
+### Horarios de misa
+
+Escribir los horarios en el archivo `data/horarios-de-misa.md`
 
 ## Imágenes
 
