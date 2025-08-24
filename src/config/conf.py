@@ -1,4 +1,7 @@
 
+
+
+
 AUTHOR= 'CarmBrc'
 SITENAME= 'Carmelitas Bariloche'
 if 'BRANDNAME' not in locals():
@@ -93,7 +96,9 @@ pedido=True
 
 
 #MENSAJES
-mensaje={}
+
+if 'mensaje' not in locals():
+  mensaje={}
 mensaje['inicial']="""<p>Monasterio “Nuestra Señora de las Nieves y Sta. Teresita” – Fundado 8 de mayo 1993</p>
 
 Santa Teresa de Jesús, Nuestra Madre, fundó el primer Carmelo reformado en España el 24 de agosto de 1562: Carisma rico y fecundo se extendió rápidamente por todo el mundo hasta llegar a nuestras tierras patagónicas.
@@ -106,4 +111,8 @@ mensaje['pedido']= "<p style='text-align: left;' >Nos comunicamos a la brevedad 
 mensaje['pedido2']= " <p>Hacemos envíos a todo el país.</p><p>Podés retirar gratis en el Monasterio de lunes a viernes de 9 a 12hs</p>"
 
 
+
 fecha="fecha de hoy"
+
+if 'horarios' not in mensaje:
+  mensaje['horarios']='Horarios de misa\\n\\n\\n* Lunes a Viernes: 18hs\\n\\n* Sábados y Domingos: 11hs'
