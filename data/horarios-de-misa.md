@@ -1,1 +1,2 @@
-Hasta el sábado 30 de agosto no habrá Misa
+Lunes a viernes 18 hs.
+Sábados y Domingos 11 hs.
