@@ -20,6 +20,8 @@ def read_catalog():
 			for key in list(element):
 			    if key is None:
 			    	del element[key]
+#			print(element) 			    	
+#			creo que o esta andando el delete
 
 		# Specify the output file name
 		output_file = file_name+".json"

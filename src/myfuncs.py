@@ -36,8 +36,9 @@ def read_xlsx_as_dict_list(filepath,first_row=1, sheet_name=None):
     # Iterate through rows starting from the second row (data rows)
     for row_index in range(first_row+1, sheet.max_row + 1):
         row_values = [cell.value for cell in sheet[row_index]]
-        row_dict = dict(zip(headers, row_values))
-        data.append(row_dict)
+        if row_values[0] is not None:
+        	row_dict = dict(zip(headers, row_values))
+        	data.append(row_dict)
 
     return data
 

@@ -296,6 +296,7 @@ function createCart(){
   var month =now.getUTCMonth()+1
   var text = "";//now.getUTCFullYear()+"-"+month+"-"+now.getUTCDate()+"\n\n";
   var preciototal=0,cantidadtotal=0,pesototal=0;
+
   for (var i = 0; i < myclass.length ;i++) {    
     var cantidad=myclass[i].value; //encodeURIComponent(myclass[i].value)
     var name=myclass[i].name
@@ -340,72 +341,27 @@ function createCart(){
   
   }
 
-  var visitantes = document.getElementsByClassName("visitantes");
-  var visitan=0
-  for (var i = 0; i < visitantes.length ;i++) {    
-    var cantidad=visitantes[i].value;
-    var name=visitantes[i].name
-    var myvar=name+"-var"
-    my_visitante = document.getElementById(myvar);
-    visitan+=parseInt(my_visitante.value);
-  }
-  if(visitan>0){
-      text += "\nCant. de visitantes: "+visitan
-  }
-  
-  pasajeros = document.getElementsByClassName("pasajeros");
-  var duermen=0
-  for (var i = 0; i < pasajeros.length ;i++) {    
-    var cantidad=pasajeros[i].value;
-    var name=pasajeros[i].name
-    var myid=name+"-cant"
-    my_noche = document.getElementById(myid);
-
-    if(my_noche.value>=1){
-      var myvar=name+"-var"
-      my_pasajero = document.getElementById(myvar);
-      duermen+=parseInt(my_pasajero.value);
-    }
-  }
-  if(duermen>0){
-      text += "\nCant. de personas: "+duermen
-  }
-
-
-
-  parador = document.getElementsByClassName("parador");
+ 
   var costodeenvio=0;
-  if(parador){
-  text += "\nCant. de productos: "+cantidadtotal
-
-  if(cantidadtotal>0){  
-    // if(xx.COSTODEENVIO>0){
-    // text+="\n";
-    costodeenvio=0  
-    preciototal+=costodeenvio
-    // text += "\nCosto de envio: $"+costodeenvio+"\n"
-    // }
-  }
-
-  // var fecha  = document.getElementById("fecha-inicio").value;
-  // fecha="\nFecha llegada: "+fecha+"\n"
-  }else{
-    // fecha=""
-  }
+  
     // return text += "<br /><br /> Importe total: $"+ preciototal+" <br /><br />";
   text += "\nImporte total: $"+ preciototal+"\n";
   if(cantidadtotal>0){  
-    if(parseInt(pesototal)<150){
-    costodeenvio=8500 ;
-    }else{
-    if(parseInt(pesototal)<400){
-      costodeenvio=10000;
-    }else{
+    if(parseInt(pesototal)<1000){
       costodeenvio=15000;
     }
+    if(parseInt(pesototal)<400){
+      costodeenvio=10000;  
     }
-    
-    text += "\n---------------\nCosto de envio: $"+costodeenvio+"\nGratis retirando en el monasterio\n"
+    if(parseInt(pesototal)<150){
+    costodeenvio=8500 ;
+    }
+    if(parseInt(costodeenvio)>0){
+      texto_costo_envio="Costo de envio: $"+costodeenvio
+    }else{
+      texto_costo_envio="Costo de envio a cotizar"
+    }
+    text += "\n---------------\n"+texto_costo_envio+"\nGratis retirando en el monasterio\n"
     //text += "\n---------------\nPeso total: "+pesototal+"gr\n"
 
     //text+="\nMercado Pago\nAlias: carmelitas.bariloche"

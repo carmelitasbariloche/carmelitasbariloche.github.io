@@ -4,6 +4,14 @@
 
 
 
+
+
+
+
+
+
+
+
 AUTHOR= 'CarmBrc'
 SITENAME= 'Carmelitas Bariloche'
 if 'BRANDNAME' not in locals():
@@ -17,7 +25,7 @@ if 'SITESUBTITLE' not in locals():
 COPYRIGHT_NOTICE= '© 2025 ' + AUTHOR
 
 if 'WHATSAPPNUM' not in locals():
-  WHATSAPPNUM= '542944506063'
+  WHATSAPPNUM= '5492944506063'
 if 'EMAIL' not in locals(): 
   EMAIL='trabajosocd@gmail.com'
 if 'COSTODEENVIO' not in locals(): 
@@ -41,8 +49,8 @@ SHORTCEL=WHATSAPPNUM[2:5]+' '+WHATSAPPNUM[5:]
 
 if 'LINKS' not in locals():
   LINKS = (
+    ('Más productos en WhatsApp!','https://wa.me/c/'+WHATSAPPNUM),
     ('Mapa: Bustillo km 19,5 ~ Bariloche ~ ARG','https://maps.app.goo.gl/GWnDiSpQmEzwKVXt5'),
-    # ('WhatsApp: '+SHORTCEL,'https://wa.me/'+WHATSAPPNUM),
     ('tel: 294 444-8456',"tel:+542944448456"),
     ('e-mail: '+showEMAIL(EMAIL),'mailto: '+EMAIL),
     ('Parroquia San Eduardo', 'https://parroquiasaneduardo.com.ar'),
