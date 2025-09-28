@@ -348,13 +348,13 @@ function createCart(){
   text += "\nImporte total: $"+ preciototal+"\n";
   if(cantidadtotal>0){  
     if(parseInt(pesototal)<1000){
-      costodeenvio=15000;
+      costodeenvio=10000;
     }
     if(parseInt(pesototal)<400){
-      costodeenvio=10000;  
+      costodeenvio=76000;  
     }
     if(parseInt(pesototal)<150){
-    costodeenvio=8500 ;
+    costodeenvio=6700 ;
     }
     if(parseInt(costodeenvio)>0){
       texto_costo_envio="Costo de envio: $"+costodeenvio
