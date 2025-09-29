@@ -351,7 +351,7 @@ function createCart(){
       costodeenvio=10000;
     }
     if(parseInt(pesototal)<400){
-      costodeenvio=76000;  
+      costodeenvio=7600;  
     }
     if(parseInt(pesototal)<150){
     costodeenvio=6700 ;
