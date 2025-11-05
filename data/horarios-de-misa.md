@@ -1,2 +1,2 @@
-Lunes a viernes 18 hs.
-Sábados y Domingos 11 hs.
+Domingo 9 de noviembre 11 hs.
+
