@@ -6,14 +6,13 @@ on:
       - main
     paths:
       - 'data/web-repositorio.xlsx'
-      - '!public/index.html'   # avoid infinite loop on index.html updates
-  workflow_dispatch:    # allow manual trigger too
+      - '!public/index.html'
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write    # ✅ allow commits
   pages: write
   id-token: write
-
 
 jobs:
   build:
@@ -22,6 +21,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,13 +39,35 @@ jobs:
           python main.py
         working-directory: src/
 
+      # ✅ NEW STEP: Add build timestamp + commit info
+      - name: Add build info to index.html
+        run: |
+          BUILD_DATE="$(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          COMMIT_HASH="$(git rev-parse --short HEAD)"
+          echo "<!-- Built from commit $COMMIT_HASH on $BUILD_DATE -->" >> public/index.html
+          echo "Appended build info to public/index.html"
+
+      # ✅ Commit & push only if there are changes
+      - name: Commit and push updated index.html
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add public/index.html
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update index.html on $(date -u +"%Y-%m-%d %H:%M:%S UTC") [skip ci]"
+            git push
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
 
-  # Single deploy job since we're just deploying
   deploy:
     needs: build
     runs-on: ubuntu-latest
