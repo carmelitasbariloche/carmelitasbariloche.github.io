@@ -5,6 +5,7 @@ on:
     branches:
       - main
     paths:
+      - 'public/images/**.jpg'
       - 'data/**.json'
       - 'data/**.md'
       - '!public/index.html'   # avoid infinite loop on index.html updates
