@@ -57,7 +57,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -1",
         "stock": 1,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-1-",
@@ -68,7 +68,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -2",
         "stock": 1,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-2-",
@@ -79,7 +79,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -3",
         "stock": 1,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-3-",
@@ -90,7 +90,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -4",
         "stock": 1,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-4-",
@@ -101,7 +101,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -5",
         "stock": 1,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-5-",
@@ -255,7 +255,7 @@
     {
         "title": "Velas Colores y Aromas -Manzana-",
         "stock": 100,
-        "precio": 4600,
+        "precio": 5000,
         "peso": 170,
         "categorias": "VELAS",
         "imagen": "coloresyaromasmanzana",
@@ -376,7 +376,7 @@
     {
         "title": "Bolsitas de lavanda-1-",
         "stock": 100,
-        "precio": 5800,
+        "precio": 7000,
         "peso": 20,
         "categorias": "VARIOS",
         "imagen": "Bolsitalavanda-1-",
@@ -387,7 +387,7 @@
     {
         "title": "Bolsitas de lavanda-2-",
         "stock": 100,
-        "precio": 5800,
+        "precio": 7000,
         "peso": 20,
         "categorias": "VARIOS",
         "imagen": "Bolsitalavanda-2-",
@@ -420,7 +420,7 @@
     {
         "title": "Cuadritos Bordados-1-",
         "stock": 1,
-        "precio": 9000,
+        "precio": 10000,
         "peso": 40,
         "categorias": "VARIOS>CUADRITOS BORDADOS",
         "imagen": "cuadritopuntocruz-1-",
@@ -431,7 +431,7 @@
     {
         "title": "Cuadritos Bordados-2-",
         "stock": 1,
-        "precio": 9000,
+        "precio": 10000,
         "peso": 40,
         "categorias": "VARIOS>CUADRITOS BORDADOS",
         "imagen": "cuadritopuntocruz-2-",
@@ -442,7 +442,7 @@
     {
         "title": "Cuadritos Bordados-3-",
         "stock": 1,
-        "precio": 9000,
+        "precio": 10000,
         "peso": 40,
         "categorias": "VARIOS>CUADRITOS BORDADOS",
         "imagen": "cuadritopuntocruz-3-",
@@ -453,7 +453,7 @@
     {
         "title": "Cuadritos Bordados-4-",
         "stock": 1,
-        "precio": 9000,
+        "precio": 10000,
         "peso": 40,
         "categorias": "VARIOS>CUADRITOS BORDADOS",
         "imagen": "cuadritopuntocruz-4-",
