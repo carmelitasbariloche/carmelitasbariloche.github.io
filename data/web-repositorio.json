@@ -2,7 +2,7 @@
     {
         "title": "Cuero señalador",
         "stock": 1,
-        "precio": 2500,
+        "precio": 2800,
         "peso": 20,
         "categorias": "CUERO",
         "imagen": "cuero señalador",
@@ -13,7 +13,7 @@
     {
         "title": "Cuero Evangelio con estuche pirograbado",
         "stock": 1,
-        "precio": 16000,
+        "precio": 18000,
         "peso": 90,
         "categorias": "CUERO",
         "imagen": "cuero evangelio con estuche pirograbado",
@@ -24,7 +24,7 @@
     {
         "title": "Detentes - Protección del Sagrado Corazón de Jesús",
         "stock": 100,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Detentes",
@@ -35,7 +35,7 @@
     {
         "title": "Escapulario chico",
         "stock": 100,
-        "precio": 1200,
+        "precio": 1500,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Escapulario chico",
@@ -46,7 +46,7 @@
     {
         "title": "Escapulario Grande",
         "stock": 100,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 2,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Escapulario grande",
@@ -222,7 +222,7 @@
     {
         "title": "Rosarios 24 glorias Sta. Teresita",
         "stock": 100,
-        "precio": 1800,
+        "precio": 2000,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
         "imagen": "rosarios-24-glorias-sta-teresita",
@@ -233,7 +233,7 @@
     {
         "title": "Rosarios Cola de rata",
         "stock": 100,
-        "precio": 3000,
+        "precio": 3500,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
         "imagen": "Rosario cola de rata",
@@ -266,7 +266,7 @@
     {
         "title": "Cerámica Rosario engarzados (perfume de Rosas con cajita)",
         "stock": 1,
-        "precio": 16000,
+        "precio": 18000,
         "peso": 40,
         "categorias": "CERÁMICA",
         "imagen": "Cerámica Rosario",
@@ -321,7 +321,7 @@
     {
         "title": "Cerámica Niños Jesús-1-",
         "stock": 1,
-        "precio": 4000,
+        "precio": 6000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
         "imagen": "Cerámica Niño Jesús-1-",
@@ -332,7 +332,7 @@
     {
         "title": "Cerámica Niños Jesús-2-",
         "stock": 1,
-        "precio": 4000,
+        "precio": 6000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
         "imagen": "Cerámica Niño Jesús-2-",
@@ -343,7 +343,7 @@
     {
         "title": "Cerámica Niños Jesús-3-",
         "stock": 1,
-        "precio": 4000,
+        "precio": 6000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
         "imagen": "Cerámica Niño Jesús-3-",
@@ -354,7 +354,7 @@
     {
         "title": "Cerámica Niños Jesús-4-",
         "stock": 1,
-        "precio": 4000,
+        "precio": 6000,
         "peso": 18,
         "categorias": "CERÁMICA>NIÑOS JESÚS",
         "imagen": "Cerámica Niño Jesús-4-",
