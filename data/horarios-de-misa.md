@@ -1,2 +1,2 @@
-Mes de enero: Lunes a viernes 11 hs.
+Lunes a viernes 18 hs.
 Sábados y domingos 11 hs.
