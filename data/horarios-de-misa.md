@@ -1,2 +1,3 @@
-No habrá misa diaria del 2 al 7 de marzo
-Domingos 11 hs.
+Lunes a viernes 18 hs
+Sábados 11 hs.
+Domingos 11 hs
