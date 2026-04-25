@@ -2,7 +2,7 @@
     {
         "title": "Cuero señalador",
         "stock": 1,
-        "precio": 2800,
+        "precio": 4000,
         "peso": 20,
         "categorias": "CUERO",
         "imagen": "cuero señalador",
@@ -13,7 +13,7 @@
     {
         "title": "Cuero Evangelio con estuche pirograbado",
         "stock": 1,
-        "precio": 18000,
+        "precio": 24000,
         "peso": 90,
         "categorias": "CUERO",
         "imagen": "cuero evangelio con estuche pirograbado",
@@ -24,7 +24,7 @@
     {
         "title": "Detentes - Protección del Sagrado Corazón de Jesús",
         "stock": 100,
-        "precio": 1500,
+        "precio": 2000,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Detentes",
@@ -35,7 +35,7 @@
     {
         "title": "Escapulario chico",
         "stock": 100,
-        "precio": 1500,
+        "precio": 2000,
         "peso": 1,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Escapulario chico",
@@ -46,7 +46,7 @@
     {
         "title": "Escapulario Grande",
         "stock": 100,
-        "precio": 2500,
+        "precio": 3000,
         "peso": 2,
         "categorias": "VARIOS>ESCAPULARIOS Y DETENTES",
         "imagen": "Escapulario grande",
@@ -57,7 +57,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -1",
         "stock": 1,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-1-",
@@ -68,7 +68,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -2",
         "stock": 1,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-2-",
@@ -79,7 +79,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -3",
         "stock": 1,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-3-",
@@ -90,7 +90,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -4",
         "stock": 1,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-4-",
@@ -101,7 +101,7 @@
     {
         "title": "Estampas de Flores Nada te turbe -5",
         "stock": 1,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 1,
         "categorias": "VARIOS>ESTAMPAS DE FLORES",
         "imagen": "Estampas Flores Nada te turbe-5-",
@@ -156,7 +156,7 @@
     {
         "title": "Madera Corazones pintados-1-",
         "stock": 100,
-        "precio": 8000,
+        "precio": 8500,
         "peso": 90,
         "categorias": "MADERA>CUNEROS",
         "imagen": "Madera Corazones pintados-1-",
@@ -167,7 +167,7 @@
     {
         "title": "Madera Corazones pintados-2-",
         "stock": 100,
-        "precio": 8000,
+        "precio": 8500,
         "peso": 90,
         "categorias": "MADERA>CUNEROS",
         "imagen": "Madera Corazones pintados-2-",
@@ -178,7 +178,7 @@
     {
         "title": "Madera Corazones pintados-3-",
         "stock": 100,
-        "precio": 8000,
+        "precio": 8500,
         "peso": 90,
         "categorias": "MADERA>CUNEROS",
         "imagen": "Madera Corazones pintados-3-",
@@ -189,7 +189,7 @@
     {
         "title": "Madera Redondeles cuneritos",
         "stock": 100,
-        "precio": 8000,
+        "precio": 8500,
         "peso": 50,
         "categorias": "MADERA>CUNEROS",
         "imagen": "Madera Redondeles cuneritos",
@@ -222,7 +222,7 @@
     {
         "title": "Rosarios 24 glorias Sta. Teresita",
         "stock": 100,
-        "precio": 2000,
+        "precio": 2500,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
         "imagen": "rosarios-24-glorias-sta-teresita",
@@ -233,7 +233,7 @@
     {
         "title": "Rosarios Cola de rata",
         "stock": 100,
-        "precio": 3500,
+        "precio": 4500,
         "peso": 8,
         "categorias": "VARIOS>ROSARIOS",
         "imagen": "Rosario cola de rata",
@@ -266,7 +266,7 @@
     {
         "title": "Cerámica Rosario engarzados (perfume de Rosas con cajita)",
         "stock": 1,
-        "precio": 18000,
+        "precio": 20000,
         "peso": 40,
         "categorias": "CERÁMICA",
         "imagen": "Cerámica Rosario",
@@ -277,7 +277,7 @@
     {
         "title": "Cerámica cruces souvenir",
         "stock": 1,
-        "precio": 5000,
+        "precio": 6500,
         "peso": 35,
         "categorias": "CERÁMICA",
         "imagen": "Cruz Souvenir",
@@ -398,7 +398,7 @@
     {
         "title": "Cerámica Agnus Dei-1-",
         "stock": 1,
-        "precio": 10000,
+        "precio": 15000,
         "peso": 125,
         "categorias": "CERÁMICA>AGNUS DEI",
         "imagen": "agnusdei-1-",
@@ -409,7 +409,7 @@
     {
         "title": "Cerámica Agnus Dei-2-",
         "stock": 1,
-        "precio": 10000,
+        "precio": 15000,
         "peso": 125,
         "categorias": "CERÁMICA>AGNUS DEI",
         "imagen": "Agnusdei-2-",
