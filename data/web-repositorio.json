@@ -365,7 +365,7 @@
     {
         "title": "Alfajores del Carmelo",
         "stock": 100,
-        "precio": 12000,
+        "precio": 15000,
         "peso": 350,
         "categorias": "VARIOS",
         "imagen": "alfajores",
@@ -495,7 +495,7 @@
         "Nombre": null
     },
     {
-        "title": "Estola Sacerdotal de tela-Bordadas-1-",
+        "title": "Estola Sacerdotal de tela--1-",
         "stock": 10,
         "precio": 60000,
         "peso": 200,
