@@ -484,7 +484,7 @@
         "Nombre": null
     },
     {
-        "title": "Estola Sacerdotal de telar",
+        "title": "Estola Sacerdotal de telar-1-",
         "stock": 1,
         "precio": 80000,
         "peso": 140,
@@ -495,7 +495,29 @@
         "Nombre": null
     },
     {
-        "title": "Estola Sacerdotal de tela--1-",
+        "title": "Estola Sacerdotal de telar-2-",
+        "stock": 1,
+        "precio": 80000,
+        "peso": 140,
+        "categorias": "LITÚRGICOS-SACERDOTALES",
+        "imagen": "estolatelar-2-",
+        "descripcion": "Confeccionada en su totalidad con telar artesanal. De fina lana con diseños exclusivos. Todos los colores litúrgicos.v (12 cm de ancho x 165 cm de largo)",
+        "ubicacion-fotos": "..\\Pictures\\A TRABAJOS WEB\\Litúrgicos-Sacerdotales\\estolatelar-2-.jpeg",
+        "Nombre": null
+    },
+    {
+        "title": "Estola Sacerdotal de telar-3-",
+        "stock": 1,
+        "precio": 80000,
+        "peso": 140,
+        "categorias": "LITÚRGICOS-SACERDOTALES",
+        "imagen": "estolatelar-3-",
+        "descripcion": "Confeccionada en su totalidad con telar artesanal. De fina lana con diseños exclusivos. Todos los colores litúrgicos.v (12 cm de ancho x 165 cm de largo)",
+        "ubicacion-fotos": "..\\Pictures\\A TRABAJOS WEB\\Litúrgicos-Sacerdotales\\estolatelar-3-.jpeg",
+        "Nombre": null
+    },
+    {
+        "title": "Estola Sacerdotal de tela-Bordadas-1-",
         "stock": 10,
         "precio": 60000,
         "peso": 200,
