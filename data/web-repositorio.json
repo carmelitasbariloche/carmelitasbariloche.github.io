@@ -570,5 +570,16 @@
         "descripcion": "Muy cómoda y amplia (1,23 mt de largo x 1,46 de ancho) Adornada con estolón confeccionado en telar artesanal. .  Incluye la Casulla con  Estola.",
         "ubicacion-fotos": null,
         "Nombre": null
+    },
+    {
+        "title": "Hongos secos",
+        "stock": 100,
+        "precio": 6000,
+        "peso": 50,
+        "categorias": "VARIOS>HONGOS SECOS",
+        "imagen": "hongossecos",
+        "descripcion": "Hongos de Pino - SUILLUS LAKEI - Deshidratados de manera natural,  sin conservantes. Recolección  realizada en nuestro bosque de manera ecológica. Ideales para salsas con carne, rissotto, etc",
+        "ubicacion-fotos": "..\\Pictures\\A TRABAJOS WEB\\VARIOS\\hongossecos.jpeg",
+        "Nombre": null
     }
 ]
