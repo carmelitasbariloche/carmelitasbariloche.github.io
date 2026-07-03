@@ -118,7 +118,7 @@ Brindamos ahora con mucha sencillez, este espacio online, respondiendo al pedido
 Desde ya les estamos muy agradecidas.
 <p style='text-align:right'>Hnas. Carmelitas de Bariloche</p>"""
 mensaje['pedido']= "<p style='text-align: left;' >Nos comunicamos a la brevedad para confirmar tu pedido y que puedas abonarlo.</p>"
-mensaje['pedido2']= " <p>Hacemos envíos a todo el país.</p><p>Podés retirar gratis en el Monasterio de lunes a viernes de 9 a 12hs</p>"
+mensaje['pedido2']= " <p>Hacemos envíos a todo el país.</p><p>Podés retirar gratis en el Monasterio de lunes a viernes de 9 a 12hs y de 15,30 a 18,00 hs</p>"
 
 
 
