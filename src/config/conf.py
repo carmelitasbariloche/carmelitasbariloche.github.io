@@ -22,10 +22,10 @@ if 'SITESUBTITLE' not in locals():
   SITESUBTITLE= "“En el corazón de mi Madre, la Iglesia, yo seré el amor”<p>(Sta. Teresita del Niño de Jesús)</p>"
 
 
-COPYRIGHT_NOTICE= '© 2025 ' + AUTHOR
+COPYRIGHT_NOTICE= '© 2026 ' + AUTHOR
 
 if 'WHATSAPPNUM' not in locals():
-  WHATSAPPNUM= '5492944506063'
+  WHATSAPPNUM= '5492944501971'
 if 'EMAIL' not in locals(): 
   EMAIL='trabajosocd@gmail.com'
 if 'COSTODEENVIO' not in locals(): 
